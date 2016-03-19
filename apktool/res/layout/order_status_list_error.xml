@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/ghs_ic_alert" style="@style/SearchErrorAlertIcon" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_horizontal" android:id="@id/order_status_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_order_status_no_results" android:contentDescription="@string/error_search_splash_text" style="@style/OrderStatusErrorMessage" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:gravity="center_horizontal" android:id="@id/order_status_find_some_food" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_order_status_find_some_food" style="@style/OrderStatusSecondaryErrorMessage" />
+</LinearLayout>

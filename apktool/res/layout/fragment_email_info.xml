@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/email_info_required_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pickup_info_required_label" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/YourInfoRequiredLabel" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/email_info_email_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email_info_email" android:layout_below="@id/email_info_required_label" style="@style/YourInfoLabel" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:textColor="@color/ghs_primary_text_color" android:id="@id/email_info_email_edit_text" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_below="@id/email_info_email_label" android:inputType="textEmailAddress" android:contentDescription="@string/desc_email_new_email" style="@style/YourInfoEditText" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector_inverted" android:id="@id/email_info_save_button" android:background="@drawable/bg_rounded_button_selector_inverted" android:layout_width="fill_parent" android:text="@string/pickup_info_save" android:layout_below="@id/email_info_email_edit_text" android:contentDescription="@string/desc_pickup_info_save_button" style="@style/YourInfoSaveButton" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/future_order_controls" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FilterFutureOrderDialogTitleContainer">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/future_order_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="@style/GHSFontDefault" />
+        </RelativeLayout>
+        <TimePicker android:layout_gravity="center" android:id="@id/future_order_time_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_future_order_filter_time_picker" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FilterFutureOrderDialogDatesContainer">
+            <RelativeLayout android:id="@id/future_order_left_arrow_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_future_order_filter_left_arrow" style="@style/FilterFutureDialogArrowContainer">
+                <ImageView android:id="@id/future_order_left_arrow" android:src="@drawable/filter_future_order_left_arrow_selector" style="@style/FilterFutureDialogArrow" />
+            </RelativeLayout>
+            <ViewFlipper android:id="@id/future_order_date_flipper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_filter_future_dialog_viewflipper_margin" android:layout_marginRight="@dimen/search_filter_future_dialog_viewflipper_margin">
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_gravity="center" android:id="@id/future_order_day1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_gravity="center" android:id="@id/future_order_day2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_gravity="center" android:id="@id/future_order_day3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_gravity="center" android:id="@id/future_order_day4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+            </ViewFlipper>
+            <RelativeLayout android:id="@id/future_order_right_arrow_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_future_order_filter_right_arrow" style="@style/FilterFutureDialogArrowContainer">
+                <ImageView android:id="@id/future_order_right_arrow" android:src="@drawable/filter_future_order_right_arrow_selector" style="@style/FilterFutureDialogArrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/search_filter_future_dialog_action_margin_left" android:layout_marginBottom="@dimen/search_filter_future_dialog_vertical_padding" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:id="@id/future_order_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restaurant_filter_future_dialog_done" android:layout_alignParentRight="true" style="@style/FilterFutureButton" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/future_order_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/search_filter_future_dialog_action_margin_left" android:text="@string/restaurant_filter_future_dialog_cancel" android:layout_toLeftOf="@id/future_order_done" style="@style/FilterFutureButton" />
+    </RelativeLayout>
+</RelativeLayout>

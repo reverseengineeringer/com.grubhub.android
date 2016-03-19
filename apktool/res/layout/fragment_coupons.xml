@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/coupon_view_flipper" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/coupon_overlay" android:background="@color/ghs_overlay_color" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_coupons_overlay">
+            <RelativeLayout android:layout_gravity="center" android:background="@drawable/bg_menu_item_popup" style="@style/CouponOverlayImageContainer">
+                <ImageView android:id="@id/coupon_overlay_image" android:src="@drawable/ghs_ic_coupon_popup" android:layout_centerHorizontal="true" style="@style/CouponOverlayImage" />
+                <TextView android:textColor="@color/ghs_light_text_color" android:id="@id/coupon_overlay_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coupon_applied" android:layout_below="@id/coupon_overlay_image" android:layout_centerHorizontal="true" style="@style/GHSFontMenuOverlay" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+</com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>

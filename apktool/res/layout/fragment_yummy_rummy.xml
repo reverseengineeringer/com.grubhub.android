@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/yummy_rummy_cta" android:background="@drawable/ghs_yummy_rummy" android:layout_width="fill_parent" android:layout_height="@dimen/yummy_rummy_cta_height" android:contentDescription="@string/desc_yummy_rummy_cta"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/yummy_rummy_header" style="@style/YummyRummyHeader">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/yummy_rummy_text" android:text="@string/yummy_rummy_text" style="@style/YummyRummyHeaderText" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/yummy_rummy_title" android:text="@string/yummy_rummy_header" style="@style/YummyRummyHeaderTitle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/official_rules" style="@style/YummyRummyRules">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/official_rules_text" android:text="@string/yummy_rummy_official_rules_text" style="@style/YummyRummyRulesText" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/official_rules_link" android:text="@string/yummy_rummy_official_rules_link" android:layout_toLeftOf="@id/official_rules_text" style="@style/YummyRummyRulesLink" />
+    </LinearLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/play_now_button" android:background="@drawable/bg_rounded_button_secondary_selector_inverted" android:text="@string/yummy_rummy_play_now" android:layout_above="@id/official_rules" android:contentDescription="@string/desc_yummy_rummy_play_now_btn" style="@style/PlayNowButton" />
+</RelativeLayout>

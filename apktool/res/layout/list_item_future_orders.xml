@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/future_order_list_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_restaurant_cell_name_color" android:id="@id/restaurant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_future_order_list_restaurant_name" style="@style/GHSFontSectionHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/future_order_eta" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/future_order_total" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+    </LinearLayout>
+</RelativeLayout>

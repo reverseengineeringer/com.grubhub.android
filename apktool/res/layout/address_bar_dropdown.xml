@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" style="@style/AddressBarSpacer" />
+    <include layout="@layout/address_bar_options" />
+    <View android:id="@id/address_bar_divider" style="@style/AddressBarDivider" />
+    <RelativeLayout android:id="@id/address_location_search" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/desc_address_search_at_current_location" style="@style/AddressDropdownLocationSearch">
+        <com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/address_location_search_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/AddressLocationSearchIcon">
+            <ImageView android:background="@drawable/ghs_ic_location" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/address_location_search_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/address_location_search_title" android:layout_toRightOf="@id/address_location_search_icon" android:layout_centerVertical="true" style="@style/AddressBarTitle" />
+    </RelativeLayout>
+    <View style="@style/AddressBarDivider" />
+    <ListView android:orientation="vertical" android:id="@id/address_saved_list" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

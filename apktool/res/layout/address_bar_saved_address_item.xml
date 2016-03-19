@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressBarSavedAddressContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/address_bar_saved_address_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/AddressBarSavedAddressLabel" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:ellipsize="end" android:id="@id/address_bar_saved_address_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/AddressBarSavedAddressInfo" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/menu_item_side_padding" android:paddingTop="@dimen/menu_item_top_padding" android:paddingRight="@dimen/menu_item_side_padding" android:paddingBottom="@dimen/menu_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/popular_badge" android:background="@drawable/ghs_ic_popular" android:visibility="gone" android:layout_width="@dimen/popular_badge_width" android:layout_height="@dimen/popular_badge_height" android:layout_marginRight="@dimen/menu_item_side_padding" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/menu_item_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/desc_menu_item_name" style="@style/MenuItemName" />
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="right" android:layout_gravity="top" android:id="@id/menu_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontMenuItemInfo" />
+            </LinearLayout>
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/menu_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/menu_item_divider" android:layout_width="fill_parent" style="@style/RestaurantMenuListDivider" />
+</LinearLayout>

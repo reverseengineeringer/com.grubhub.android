@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_address_dropdown_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressBarAutoCompleteItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/address_bar_autocomplete_recent_icon" android:background="@drawable/ghs_ic_recent" android:visibility="gone" style="@style/AddressBarAutoCompleteRecentIcon" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:id="@id/address_bar_autocomplete_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressBarAutoCompleteItem" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="200" android:valueTo="0" android:propertyName="alpha"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <objectAnimator android:duration="150" android:valueTo="0.05" android:valueType="floatType" android:propertyName="scaleX"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <objectAnimator android:duration="150" android:valueTo="0.05" android:valueType="floatType" android:propertyName="scaleY"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</set>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ghs_bg_search_welcome" android:scaleType="centerCrop" />
+    <ProgressBar android:id="@id/splash_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:id="@id/splash_loading_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/splash_progress" android:layout_centerHorizontal="true" style="@style/SplashLoadingText" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_more_filters_resetall" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/more_filter_reset_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_filter_reset_all" android:layout_alignParentRight="true" style="@style/FilterResetButton" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/more_filter_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/sortby_filter_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/ratings_filter_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/price_filter_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/distance_filter_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/options_filter_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/future_ordering_filter_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/search_filter_section_padding" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

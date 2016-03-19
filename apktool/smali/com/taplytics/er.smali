@@ -1,0 +1,43 @@
+.class Lcom/taplytics/er;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/taplytics/hz;
+
+
+# instance fields
+.field final synthetic a:Lcom/taplytics/cs;
+
+
+# direct methods
+.method constructor <init>(Lcom/taplytics/cs;)V
+    .locals 0
+
+    .prologue
+    .line 203
+    iput-object p1, p0, Lcom/taplytics/er;->a:Lcom/taplytics/cs;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Exception;)V
+    .locals 1
+
+    .prologue
+    .line 206
+    if-eqz p1, :cond_0
+
+    .line 207
+    const-string v0, "Writing JSON to Disk: "
+
+    invoke-static {v0, p1}, Lcom/taplytics/ck;->b(Ljava/lang/String;Ljava/lang/Exception;)V
+
+    .line 208
+    :cond_0
+    return-void
+.end method

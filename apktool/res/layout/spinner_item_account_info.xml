@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:id="@id/address_info_spinner_value" android:layout_width="fill_parent" android:layout_centerInParent="true" style="@style/AccountInfoSpinnerItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

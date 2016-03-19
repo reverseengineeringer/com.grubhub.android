@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ghs_actionable_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PopupViewContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/popup_no" android:background="@drawable/ghs_ic_popup_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/PopupViewNegativeButton" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/popup_yes" android:background="@drawable/ghs_ic_popup_caret" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/PopupViewPositiveButton" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:id="@id/popup_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/popup_no" android:layout_centerVertical="true" />
+</RelativeLayout>

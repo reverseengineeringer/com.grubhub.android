@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/past_orders_loading_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/past_order_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/past_order_text_layout" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:visibility="gone" style="@style/PastOrderButtonGreyContainer">
+                    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/ghs_actionable_color" android:background="@drawable/bg_rounded_button_selector" android:text="@string/past_order_view_button_rate_and_review" style="@style/PastOrderRateReviewViewButton" />
+                </LinearLayout>
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:id="@id/restaurant_name" android:contentDescription="@string/desc_past_order_restaurant_name" style="@style/PastOrderViewRestaurantName" />
+                <View style="@style/PastOrderViewDivider" />
+                <RelativeLayout android:orientation="horizontal" android:padding="@dimen/past_orders_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/date_time" android:layout_alignParentLeft="true" style="@style/PastOrderViewDateTime" />
+                    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/order_type" android:layout_alignParentRight="true" style="@style/PastOrderViewOrderType" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/past_orders_old_system" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/order_type">
+                        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center" android:padding="@dimen/past_orders_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/past_orders_old_system" style="@style/GHSFontSectionHeader" />
+                        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center" android:padding="@dimen/past_orders_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/past_orders_visit_restaurant" style="@style/GHSFontSectionHeader" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/past_orders_old_order" android:background="@color/ghs_background_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/past_order_text_layout">
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center" android:padding="@dimen/past_orders_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/past_orders_old_order" style="@style/GHSFontSectionHeader" />
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center" android:padding="@dimen/past_orders_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/past_orders_visit_restaurant_menu" style="@style/GHSFontSectionHeader" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/add_items_or_view_menu_container" android:layout_alignParentBottom="true" style="@style/PastOrderButtonGreyContainer">
+                <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/ghs_light_text_color" android:id="@id/add_items_or_view_menu_button" android:text="@string/past_order_view_button_add_items" android:contentDescription="@string/desc_past_order_view_menu_button" style="@style/PastOrderAddItemsOrViewMenuButton" />
+            </LinearLayout>
+            <ListView android:id="@id/past_order_view_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:layout_above="@id/add_items_or_view_menu_container" android:layout_below="@id/past_order_text_layout" style="@style/PastOrderViewList" />
+        </RelativeLayout>
+    </com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSAutoCompleteTextView android:textColor="@color/ghs_light_text_color" android:textColorHint="@color/ghs_light_text_color" android:id="@id/address_bar" android:hint="@string/address_bar_hint" android:layout_centerVertical="true" android:inputType="textPostalAddress" android:imeOptions="actionSearch" android:contentDescription="@string/desc_address_bar" style="@style/AddressBarAutoCompleteTextView" />
+    <ImageView android:id="@id/address_search_icon" android:src="@drawable/ghs_ic_action_bar_search" android:scaleType="fitCenter" android:layout_alignLeft="@id/address_bar" android:layout_centerVertical="true" android:contentDescription="@string/desc_address_search_icon" style="@style/AddressBarSearchIcon" />
+    <ImageView android:id="@id/address_clear_button" android:visibility="gone" android:src="@drawable/btn_clear_address" android:scaleType="fitCenter" android:layout_alignRight="@id/address_bar" android:layout_centerVertical="true" android:contentDescription="@string/desc_address_clear_button" style="@style/AddressBarClearButton" />
+</merge>

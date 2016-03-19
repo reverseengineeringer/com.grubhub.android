@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/search_tab_background_selector" android:paddingLeft="@dimen/search_filter_horizontal_padding" android:paddingTop="@dimen/search_filter_vertical_padding" android:paddingRight="@dimen/search_filter_horizontal_padding" android:paddingBottom="@dimen/search_filter_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/search_tab_text_selector" android:id="@id/search_filter_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/GHSFilterTabText" />
+</RelativeLayout>

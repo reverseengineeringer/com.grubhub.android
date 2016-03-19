@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:interpolator="@android:anim/decelerate_interpolator" android:duration="600" android:fromXDelta="-20.000004%p" android:toXDelta="14.999998%p" android:fromYDelta="100.0%" android:toYDelta="-100.0%" />
+    <translate android:interpolator="@android:anim/accelerate_interpolator" android:duration="300" android:startOffset="1000" android:fromXDelta="14.999998%p" android:toXDelta="25.0%p" android:fromYDelta="-100.0%" android:toYDelta="200.0%" />
+</set>

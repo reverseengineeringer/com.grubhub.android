@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/address_bar_options" android:clickable="true" android:layout_width="fill_parent" style="@style/AddressBarOptionsContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_toggle_selector" android:id="@id/address_delivery_button" android:background="@drawable/bg_rounded_button_toggle_left_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/address_option_delivery" android:layout_weight="1.0" android:contentDescription="@string/desc_address_option_delivery_button" style="@style/AddressBarOptionsButton" />
+    <View style="@style/AddressBarOptionsButtonSeparator" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_toggle_selector" android:id="@id/address_pickup_button" android:background="@drawable/bg_rounded_button_toggle_right_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/address_option_pickup" android:layout_weight="1.0" android:contentDescription="@string/desc_address_option_pickup_button" style="@style/AddressBarOptionsButton" />
+    <View android:id="@id/address_show_all_separator" android:visibility="gone" style="@style/AddressBarOptionsButtonSeparator" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_toggle_selector" android:id="@id/address_show_all_button" android:background="@drawable/bg_rounded_button_toggle_right_selector" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/address_option_show_all" android:layout_weight="1.0" android:contentDescription="@string/desc_address_option_show_all_button" style="@style/AddressBarOptionsButton" />
+</LinearLayout>

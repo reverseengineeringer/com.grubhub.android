@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/past_orders_padding" android:paddingRight="@dimen/past_orders_padding" android:paddingBottom="@dimen/past_orders_padding_between_text" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/food_item_price" android:layout_alignParentRight="true" style="@style/PastOrderViewPrice" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/food_item" android:layout_toLeftOf="@id/food_item_price" android:layout_alignParentLeft="true" style="@style/PastOrderViewFoodItems" />
+</RelativeLayout>

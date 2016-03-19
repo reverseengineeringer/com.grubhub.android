@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="restaurant_header_matching_items">
+        <item quantity="other">Matching Items</item>
+        <item quantity="one">Matching Item</item>
+    </plurals>
+    <plurals name="restaurant_header_ratings_count">
+        <item quantity="other">(%s Ratings)</item>
+        <item quantity="one">(%s Rating)</item>
+    </plurals>
+</resources>

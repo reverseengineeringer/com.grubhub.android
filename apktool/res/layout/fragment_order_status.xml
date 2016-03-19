@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/order_status_loading_view_flipper" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/order_status_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@color/ghs_separator_line_default_color" android:dividerHeight="@dimen/order_status_list_divider" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>

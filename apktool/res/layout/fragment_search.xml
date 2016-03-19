@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ghs="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_active_filter_container">
+        <com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/search_loading_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.grubhub.AppBaseLibrary.android.views.GHSOverScrollListView android:id="@id/search_results" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/SearchResultsList" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>
+        <FrameLayout android:id="@id/filter_search_results_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/search_active_filter_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/divider_height" android:layout_below="@id/search_header">
+        <LinearLayout android:orientation="horizontal" android:id="@id/search_filter_text_container" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SearchActiveFilters">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/search_clear_filter_text" android:src="@drawable/ghs_ic_empty_bag" android:contentDescription="@string/desc_active_filter_clear" style="@style/SearchClearActiveFilters" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:ellipsize="end" android:id="@id/search_filter_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/GHSFontDefault" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/search_clear_filter_container" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SearchActiveFilters">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/search_filter_reset" android:layout_weight="1.0" style="@style/GHSFontDefaultLarge" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/ghs_light_text_color" android:layout_gravity="center_vertical" android:id="@id/search_clear_filter_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:contentDescription="@string/desc_active_filter_clear_cancel" style="@style/GHSFontDefault" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/ghs_light_text_color" android:layout_gravity="center_vertical" android:id="@id/search_clear_filter_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_filter_clear_confirm" android:contentDescription="@string/desc_active_filter_clear_confirm" style="@style/GHSFontDefault" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/search_address_dropdown_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/search_header" android:layout_width="fill_parent" android:layout_height="@dimen/restaurant_list_header_height">
+        <com.grubhub.AppBaseLibrary.android.views.GHSSearchBar android:id="@id/search_bar" android:background="@color/ghs_background_color" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_search_bar" ghs:searchBarBackground="@drawable/bg_edit_text_search" style="@style/SearchBar" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/search_dialog_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/filter_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

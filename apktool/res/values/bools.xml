@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
+    <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_action_bar_expanded_action_views_exclusive">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="default_use_new_api">true</bool>
+    <bool name="default_use_ssl">true</bool>
+    <bool name="feature_google_nearby">false</bool>
+    <bool name="feature_messages">false</bool>
+    <bool name="feature_ratings_reviews">false</bool>
+    <bool name="feature_urban_airship">false</bool>
+    <bool name="ghs_show_popular_icon">false</bool>
+    <bool name="gtm_verbose">false</bool>
+    <bool name="only_use_subtotal_towards_delivery_minimum">true</bool>
+    <bool name="show_upgrade_coach_bubbles">true</bool>
+    <bool name="ua_in_production">true</bool>
+    <bool name="wallet_enabled">false</bool>
+</resources>

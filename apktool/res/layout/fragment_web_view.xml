@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/web_view_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+    <WebView android:id="@id/web_view_component" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/web_view_fallback" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/web_view_fallback_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/webview_fallback_image_bottom_margin" android:src="@drawable/ghs_ic_alert" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textSize="@dimen/webview_fallback_text_size" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webview_error_message1" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textSize="@dimen/webview_fallback_text_size" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webview_error_message2" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textSize="@dimen/webview_fallback_text_size" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webview_error_message3" />
+    </LinearLayout>
+</RelativeLayout>

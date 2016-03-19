@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/breadcrumb_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BreadCrumbContainer">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_breadcrumb_selector" android:layout_gravity="center_horizontal" android:id="@id/infoText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/breadcrumb_your_info" style="@style/GHSFontTertiary" />
+            <ImageView android:id="@id/infoBar" android:src="@drawable/bg_progress_bar_line_left_selector" style="@style/BreadCrumbLine" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_breadcrumb_selector" android:layout_gravity="center_horizontal" android:id="@id/paymentText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/breadcrumb_payment" style="@style/GHSFontTertiary" />
+            <ImageView android:id="@id/paymentBar" android:src="@drawable/bg_progress_bar_line_center_selector" style="@style/BreadCrumbLine" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/address_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_breadcrumb_selector" android:layout_gravity="center_horizontal" android:id="@id/addressText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/breadcrumb_address" style="@style/GHSFontTertiary" />
+            <ImageView android:id="@id/addressBar" android:src="@drawable/bg_progress_bar_line_center_selector" style="@style/BreadCrumbLine" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_breadcrumb_selector" android:layout_gravity="center_horizontal" android:id="@id/reviewText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/breadcrumb_review" style="@style/GHSFontTertiary" />
+            <ImageView android:id="@id/reviewBar" android:src="@drawable/bg_progress_bar_line_right_selector" style="@style/BreadCrumbLine" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/ghs_separator_line_default_color" android:layout_width="fill_parent" android:layout_below="@id/breadcrumb_container" style="@style/BreadCrumbDivider" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/navigation_logout_component" android:background="@color/ghs_background_color" android:padding="@dimen/nav_user_info_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nav_logout_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textStyle="bold" android:id="@id/nav_logout_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nav_text_left_padding" android:layout_toRightOf="@id/nav_logout_image" style="@style/GHSNavListItemName" />
+</RelativeLayout>

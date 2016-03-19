@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ghs_background_no_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/payments_empty_payments" android:background="@color/ghs_background_color" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_credit_card" android:contentDescription="@string/desc_credit_card_empty" style="@style/GHSFontDefaultLarge" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/ghs_separator_line_default_color" style="@style/SavedAddressListView" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_max_action_buttons">2</integer>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="bt_match_parent">-1</integer>
+    <integer name="cart_search_data_lifetime_minutes">120</integer>
+    <integer name="cart_switch_animation_duration_full">250</integer>
+    <integer name="cart_switch_animation_duration_half">125</integer>
+    <integer name="default_maximum_quantity">99</integer>
+    <integer name="default_network_timeout">10000</integer>
+    <integer name="extended_network_timeout">60000</integer>
+    <integer name="google_play_services_version">7571000</integer>
+    <integer name="max_characters_order_instructions">400</integer>
+    <integer name="max_characters_promo_code">200</integer>
+    <integer name="max_characters_review_writeup">2000</integer>
+    <integer name="max_characters_special_instructions">500</integer>
+    <integer name="max_lines_promo_code">1</integer>
+    <integer name="menu_item_quantity_max_characters">2</integer>
+    <integer name="minute_milliseconds">60000</integer>
+    <integer name="orders_until_launch">2</integer>
+    <integer name="orders_until_remind_later_launch">2</integer>
+    <integer name="session_time_minutes">30</integer>
+    <integer name="welcome_screen_bg_duration">1000</integer>
+    <integer name="welcome_screen_bounce_duration">250</integer>
+    <integer name="welcome_screen_content_slide_duration">750</integer>
+    <integer name="welcome_screen_logo_alpha_duration">750</integer>
+    <integer name="welcome_screen_logo_animate_duration">750</integer>
+</resources>

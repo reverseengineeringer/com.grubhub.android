@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:paddingTop="@dimen/payment_spinner_google_vertical_dimen" android:paddingBottom="@dimen/payment_spinner_google_vertical_dimen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_payment_spinner_paypal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paypal_horizontal" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RestaurantDetailsHoursOfOperationItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="left" android:id="@id/restaurant_details_days_of_operation" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/RestaurantDetailsSubHeader" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="right" android:id="@id/restaurant_details_hours_of_operation" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/RestaurantDetailsHoursOfOperation" />
+</LinearLayout>

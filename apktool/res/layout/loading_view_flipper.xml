@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading_view_progress_bar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:gravity="center" android:layout_gravity="center" android:id="@id/loading_view_progress_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/LoadingViewFlipperLoadingText" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/loading_view_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:gravity="center" android:layout_gravity="center" android:id="@id/loading_view_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/LoadingViewFlipperErrorText" />
+    </ScrollView>
+    <FrameLayout android:layout_gravity="center" android:id="@id/loading_view_error_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

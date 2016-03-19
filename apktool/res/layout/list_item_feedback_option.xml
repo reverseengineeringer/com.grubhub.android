@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FeedbackItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/feedback_option_radio_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/feedback_option_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/feedback_option_radio_button" android:layout_centerVertical="true" style="@style/FeedbackItemText" />
+</RelativeLayout>

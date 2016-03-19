@@ -1,0 +1,20 @@
+package com.amazon.insights.impl;
+
+import com.amazon.insights.error.InsightsError;
+
+class DisabledAmazonInsights$1$1$1
+  implements InsightsError
+{
+  DisabledAmazonInsights$1$1$1(DisabledAmazonInsights.1.1 param1) {}
+  
+  public String getMessage()
+  {
+    return "The Amazon Insights SDK was not initialized";
+  }
+}
+
+/* Location:
+ * Qualified Name:     com.amazon.insights.impl.DisabledAmazonInsights.1.1.1
+ * Java Class Version: 6 (50.0)
+ * JD-Core Version:    0.7.1
+ */

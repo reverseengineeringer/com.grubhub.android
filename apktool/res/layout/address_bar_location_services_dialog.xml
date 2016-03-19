@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/address_dialog" android:background="@drawable/bg_address_dialog" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressErrorDialogContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressDialogDescriptionContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/address_new_user_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/address_location_services_disabled_title" style="@style/AddressDialogTitle" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/address_location_services_disabled_body" android:layout_below="@id/address_new_user_title" android:layout_centerVertical="true" style="@style/AddressBarDescription" />
+    </RelativeLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector_inverted" android:id="@id/address_location_services_button" android:background="@drawable/bg_rounded_button_selector_inverted" android:layout_width="fill_parent" android:text="@string/address_button_location_services" android:contentDescription="@string/desc_address_location_services_button" style="@style/AddressLocationServicesDialogButton" />
+    <View android:layout_width="fill_parent" style="@style/AddressLocationServicesDialogButtonSpacer" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/update_cart_time_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/future_order_update_cart_margin">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/update_cart_view1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:gravity="center" android:id="@id/update_cart_view1_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/future_order_change_delivery_time" style="@style/CartDialogHeader" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/update_cart_update_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/desc_future_order_update_cart_button" style="@style/CartDialogButtonPrimary" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/update_cart_update_keep_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/desc_future_order_update_cart_button_deny" style="@style/CartDialogButtonSecondary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/update_cart_view2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/update_cart_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/update_cart_view3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:gravity="center" android:id="@id/update_cart_view3_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/future_order_update_cart_failed" style="@style/CartDialogHeader" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/update_cart_create_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/future_order_update_cart_create_btn_text" android:contentDescription="@string/desc_future_order_update_cart_create_btn_text" style="@style/CartDialogButtonPrimary" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/update_cart_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/future_order_update_cart_cancel_btn_text" android:contentDescription="@string/desc_future_order_update_cart_cancel_btn_text" style="@style/CartDialogButtonSecondary" />
+        </LinearLayout>
+    </ViewFlipper>
+</RelativeLayout>

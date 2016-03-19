@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:paddingRight="@dimen/action_bar_home_icon_padding" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/desc_action_bar_cart_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/action_bar_bag_icon" android:background="@drawable/icon_bag" android:layout_width="@dimen/action_bar_menu_bag_icon_width" android:layout_height="@dimen/action_bar_menu_bag_icon_height" android:layout_marginLeft="@dimen/action_bar_home_icon_padding" android:layout_centerVertical="true" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:id="@id/action_bar_cart_menu_text" android:paddingLeft="@dimen/action_bar_menu_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$1.00" android:layout_toRightOf="@id/action_bar_bag_icon" android:layout_centerVertical="true" android:contentDescription="@string/desc_action_bar_cart_button_subtotal_text" style="@style/GHSFontActionBarMenu" />
+</RelativeLayout>

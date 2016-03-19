@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ghs_background_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/filter_search_tabs_container" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SearchBarAutoCompleteItemContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_tip_button_selector" android:gravity="center" android:id="@id/filter_search_food" android:background="@drawable/bg_rounded_button_toggle_left_selector" android:layout_width="fill_parent" android:layout_height="@dimen/menu_item_quantity_button_height" android:text="@string/search_tab_food" android:layout_toLeftOf="@id/quantity_divider" android:layout_alignParentLeft="true" android:contentDescription="@string/desc_search_autocomplete_tab_food" style="@style/GHSFontMenuItemTitle" />
+        <View android:id="@id/quantity_divider" android:background="@drawable/bg_rounded_button_toggle_separator" android:layout_height="@dimen/menu_item_quantity_button_height" android:layout_centerHorizontal="true" style="@style/CartTipButtonSeparator" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_tip_button_selector" android:gravity="center" android:id="@id/filter_search_restaurants" android:background="@drawable/bg_rounded_button_toggle_right_selector" android:layout_width="fill_parent" android:layout_height="@dimen/menu_item_quantity_button_height" android:text="@string/search_tab_restaurants" android:layout_toRightOf="@id/quantity_divider" android:layout_alignParentRight="true" android:contentDescription="@string/desc_search_autocomplete_tab_restaurants" style="@style/GHSFontMenuItemTitle" />
+    </RelativeLayout>
+    <View android:background="@drawable/divider_gray" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/filter_search_results_loading_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/filter_search_autocomplete_results_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>
+</LinearLayout>

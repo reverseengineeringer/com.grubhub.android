@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/google_wallet_progress_bar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/google_wallet_progress_bar" android:layout_centerVertical="true">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/google_wallet_email" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/google_wallet_payment_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/google_wallet_email" />
+    </RelativeLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/ghs_actionable_color" android:gravity="center" android:id="@id/google_wallet_edit_wallet" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/review_order_button_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_review_order_edit_payment_button" style="@style/ReviewOrderInformationEditButton" />
+</RelativeLayout>

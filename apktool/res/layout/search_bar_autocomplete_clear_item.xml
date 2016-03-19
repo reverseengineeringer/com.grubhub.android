@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:gravity="center" android:id="@id/search_bar_autocomplete_text" android:background="@drawable/bg_address_dropdown_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_clear_recent_searches" android:layout_toLeftOf="@id/search_bar_restaurant_distance" android:layout_toRightOf="@id/search_bar_autocomplete_icon" android:contentDescription="@string/desc_search_autocomplete_clear_history" style="@style/SearchBarAutoCompleteClearAllItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

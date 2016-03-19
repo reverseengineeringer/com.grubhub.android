@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:duration="0" android:fromXDelta="0.0%p" android:toXDelta="101.9989%p" />
+    <alpha android:duration="@integer/welcome_screen_bounce_duration" android:startOffset="0" android:fromAlpha="0.0" android:toAlpha="1.0" />
+    <translate android:duration="@integer/welcome_screen_content_slide_duration" android:startOffset="@integer/welcome_screen_bounce_duration" android:fromXDelta="0.0%p" android:toXDelta="-101.9989%p" />
+</set>

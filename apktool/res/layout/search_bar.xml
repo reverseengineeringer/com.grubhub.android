@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_refine_click_area" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:contentDescription="@string/desc_search_refine_click_area" style="@style/SearchRefineClickArea">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/search_refine_button" android:background="@drawable/bg_refine_button" android:contentDescription="@string/desc_search_refine_button" style="@style/SearchRefineButton" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_search_filters_selector" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_filter_filters" style="@style/GHSFontDefault" />
+    </LinearLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:textColor="@color/ghs_secondary_text_color" android:textColorHint="@color/ghs_secondary_text_color" android:id="@id/search_edit_text" android:layout_width="fill_parent" android:hint="@string/search_hint" android:drawableLeft="@drawable/ghs_ic_search" android:drawablePadding="@dimen/search_bar_search_icon_padding" android:layout_toLeftOf="@id/search_refine_click_area" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" android:contentDescription="@string/desc_search_bar_field" style="@style/SearchEditText" />
+    <ImageView android:id="@id/search_clear_button" android:visibility="gone" android:src="@drawable/btn_clear" android:scaleType="fitCenter" android:layout_alignRight="@id/search_edit_text" android:layout_centerVertical="true" android:contentDescription="@string/desc_search_clear_button" style="@style/SearchClearButton" />
+</merge>

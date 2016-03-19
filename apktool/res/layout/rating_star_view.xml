@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/rating_star_one" android:background="@drawable/ghs_rating_star_on" android:contentDescription="@string/desc_rating_star" style="@style/RatingStar" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/rating_star_two" android:background="@drawable/ghs_rating_star_on" android:layout_toRightOf="@id/rating_star_one" android:contentDescription="@string/desc_rating_star" style="@style/RatingStar" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/rating_star_three" android:background="@drawable/ghs_rating_star_on" android:layout_toRightOf="@id/rating_star_two" android:contentDescription="@string/desc_rating_star" style="@style/RatingStar" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/rating_star_four" android:background="@drawable/ghs_rating_star_on" android:layout_toRightOf="@id/rating_star_three" android:contentDescription="@string/desc_rating_star" style="@style/RatingStar" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/rating_star_five" android:background="@drawable/ghs_rating_star_on" android:layout_toRightOf="@id/rating_star_four" android:contentDescription="@string/desc_rating_star" style="@style/RatingStar" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSNavListItemDescription" />
+</merge>

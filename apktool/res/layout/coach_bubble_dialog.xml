@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/coach_bubble_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ghs="http://schemas.android.com/apk/res-auto">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTriangle android:layout_gravity="center_vertical" android:id="@id/coach_bubble_arrow" ghs:triangleColor="@color/ghs_accent_color" ghs:triangleOrientation="normal" style="@style/CoachBubbleTriangle" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:gravity="center" android:id="@id/coach_bubble_text" android:background="@color/ghs_accent_color" android:layout_height="wrap_content" android:layout_below="@id/coach_bubble_arrow" android:layout_centerHorizontal="true" style="@style/CoachBubbleTextView" />
+</RelativeLayout>

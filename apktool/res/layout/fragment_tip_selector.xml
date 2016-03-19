@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:gravity="center_vertical" android:clickable="true" android:layout_width="fill_parent" android:text="@string/tip_selector_title_select_tip_amount" style="@style/TipSelectorTitle" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:id="@id/tip_selector_cash" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:text="@string/tip_selector_label_cash_tip" style="@style/TipSelectorOption" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tip_selector_ten_percent" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" style="@style/TipSelectorOptionContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip_selector_label_ten_percent" style="@style/TipSelectorLabel" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/tip_selector_ten_percent_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TipSelectorAmount" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tip_selector_fifteen_percent" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" style="@style/TipSelectorOptionContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip_selector_label_fifteen_percent" style="@style/TipSelectorLabel" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/tip_selector_fifteen_percent_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TipSelectorAmount" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tip_selector_twenty_percent" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" style="@style/TipSelectorOptionContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip_selector_label_twenty_percent" style="@style/TipSelectorLabel" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/tip_selector_twenty_percent_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TipSelectorAmount" />
+    </LinearLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:id="@id/tip_selector_other" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:text="@string/tip_selector_label_other" style="@style/TipSelectorOption" />
+</LinearLayout>

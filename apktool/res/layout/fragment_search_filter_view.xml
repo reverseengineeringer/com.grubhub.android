@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSRestaurantFilterView android:id="@id/search_filter_tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+        <RelativeLayout android:id="@id/settings_apply_button_container" android:background="@color/bt_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:contentDescription="@string/desc_filter_apply_button">
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector_inverted" android:layout_gravity="center" android:id="@id/settings_apply_button" android:background="@drawable/bg_rounded_button_selector_inverted" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_filter_apply" android:contentDescription="@string/desc_menu_item_add_to_cart_button" style="@style/FilterApplyButton" />
+        </RelativeLayout>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/settings_apply_button_container" android:layout_below="@android:id/tabs" />
+        <View android:id="@id/filter_shadow" android:background="@drawable/filter_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/search_filter_shadow_height" android:layout_alignTop="@android:id/tabcontent" />
+    </RelativeLayout>
+</com.grubhub.AppBaseLibrary.android.views.GHSRestaurantFilterView>

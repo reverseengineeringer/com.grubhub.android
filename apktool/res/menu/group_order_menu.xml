@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ghs_ic_group_order_nav" android:id="@id/group_order_menu_item" android:title="GO" android:showAsAction="always|withText" />
+    <item android:id="@id/to_cart_menu_item" android:title="$0.00" android:showAsAction="always|withText" />
+</menu>

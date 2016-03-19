@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/order_tracking_loading_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/ghs_background_transparent_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/order_tracking_info_bar" android:layout_width="fill_parent" android:layout_height="@dimen/order_tracking_info_bar_height" android:layout_alignParentTop="true">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:gravity="center" android:id="@id/order_tracking_order_number" android:background="@color/ghs_primary_pressed_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/GHSFontSubHeader" />
+            <ImageView android:id="@id/order_tracking_divider" android:background="@color/ghs_primary_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="?android:listDivider" android:scaleType="fitXY" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:gravity="center" android:id="@id/order_tracking_eta" android:background="@color/ghs_primary_pressed_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/GHSFontSubHeader" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/order_tracking_map" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_above="@id/order_tracking_status_container" android:layout_below="@id/order_tracking_info_bar" android:contentDescription="@string/desc_order_tracking_map" />
+        <RelativeLayout android:id="@id/order_tracking_status_container" android:background="@drawable/bg_restaurant_image" android:layout_width="fill_parent" android:layout_height="@dimen/order_tracking_status_bar_height" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/order_tracking_status_icon_container" android:visibility="visible" android:layout_width="@dimen/order_tracking_status_container_icon_width" android:layout_height="fill_parent" android:layout_alignTop="@id/order_tracking_status_text_container">
+                <ImageView android:id="@id/order_tracking_status_icon" android:background="@drawable/ghs_ic_order_tracking_status" android:layout_centerHorizontal="true" android:contentDescription="@string/desc_order_tracking_status_icon" style="@style/OrderTrackingStatusIcon" />
+                <ImageView android:id="@id/order_tracking_status_line" android:background="@color/ghs_active_color" android:layout_width="@dimen/divider_height" android:layout_height="fill_parent" android:src="?android:listDivider" android:scaleType="fitXY" android:layout_below="@id/order_tracking_status_icon" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/order_tracking_status_driver_icon_container" android:layout_width="@dimen/order_tracking_status_container_icon_width" android:layout_height="fill_parent">
+                <com.grubhub.AppBaseLibrary.android.dataServices.net.images.GHSNetworkImageView android:layout_gravity="center" android:id="@id/order_tracking_courier_photo" android:background="@drawable/courier_image" android:visibility="gone" android:src="@drawable/ghs_ic_courier" android:scaleType="fitCenter" android:contentDescription="@string/desc_order_tracking_courier_photo" style="@style/OrderTrackingCourierPhoto" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/order_tracking_status_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/order_tracking_status_driver_icon_container" android:layout_centerVertical="true">
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/order_tracking_status_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GHSFontSmallSectionHeader" />
+                <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/order_tracking_status" android:paddingRight="@dimen/order_tracking_status_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/order_tracking_status_header" style="@style/GHSFontDefault" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>

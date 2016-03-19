@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/restaurant_header_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/order_tracking_cta" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/OrderTrackingCTA">
+        <ImageView android:background="@drawable/ghs_ic_order_tracking" android:contentDescription="@string/desc_order_tracking_cta_icon" style="@style/OrderTrackingCTAIcon" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/order_tracking_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_tracking_cta" style="@style/GHSFontSectionHeader" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_rounded_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_tracking_more" android:layout_below="@id/order_tracking_text" style="@style/GHSFontDefault" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/order_tracking_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:src="?android:listDivider" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/order_status_event_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:showDividers="end|middle" />
+    <RelativeLayout android:id="@id/order_status_restaurant_container" android:background="@drawable/bg_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/OrderStatusRestaurantContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/order_status_restaurant_name" android:paddingLeft="@dimen/restaurant_header_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GHSFontSectionHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_rounded_button_selector" android:paddingLeft="@dimen/restaurant_header_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_status_view_receipt" android:layout_below="@id/order_status_restaurant_name" style="@style/GHSFontDefault" />
+    </RelativeLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_rounded_button_selector" android:gravity="center" android:id="@id/order_status_call_restaurant" android:background="@drawable/bg_rounded_button_selector" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/restaurant_header_padding" android:layout_marginRight="@dimen/restaurant_header_padding" android:text="@string/receipt_button_call_the_restaurant_no_number" android:contentDescription="@string/desc_receipt_call_restaurant_button" style="@style/RestaurantHeaderReviews" />
+</LinearLayout>

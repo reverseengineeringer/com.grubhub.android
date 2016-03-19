@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/state_dropdown_icon" android:background="@drawable/grey_dropdown_triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AddressStateSpinnerViewArrow" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:id="@id/address_info_spinner_value" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/state_dropdown_icon" android:layout_alignParentLeft="true" style="@style/GHSFontDefault" />
+</RelativeLayout>

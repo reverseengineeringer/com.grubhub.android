@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clickable="true" style="@style/PopupPromptViewContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/popup_prompt_no" android:text="@string/no" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/PopupPromptNegativeButton" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/popup_prompt_yes" android:text="@string/yes" android:layout_toLeftOf="@id/popup_prompt_no" android:layout_centerVertical="true" style="@style/PopupPromptPositiveButton" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/popup_prompt_description" android:layout_toLeftOf="@id/popup_prompt_yes" android:layout_centerVertical="true" style="@style/PopupPromptDescription" />
+</RelativeLayout>

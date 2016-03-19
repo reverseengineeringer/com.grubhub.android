@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/past_orders_loading_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/past_order_results" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/ghs_separator_line_default_color" style="@style/PastOrdersList" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>
+    <FrameLayout android:id="@id/past_order_view_container" android:background="@color/ghs_background_no_color" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

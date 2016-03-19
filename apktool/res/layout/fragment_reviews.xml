@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ghs_background_no_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/search_loading_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.grubhub.AppBaseLibrary.android.views.GHSOverScrollListView android:id="@id/reviews_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ReviewsList" />
+    </com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>
+    <RelativeLayout android:orientation="vertical" android:id="@id/reviews_header" android:background="@color/ghs_background_no_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/reviews_list_header_height">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_rounded_button_selector" android:gravity="center" android:background="@drawable/bg_rounded_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reviews_rate_and_review" android:layout_above="@id/verify_address_your_info_header" android:contentDescription="@string/desc_reviews_create_review" style="@style/ReviewsCreateReviewButton" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/verify_address_your_info_header" android:background="@color/ghs_menu_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/reviews_reviews_title" android:layout_alignParentBottom="true" style="@style/CheckoutSectionHeader" />
+    </RelativeLayout>
+</FrameLayout>

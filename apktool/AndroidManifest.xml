@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" package="com.grubhub.android" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <android:uses-permission android:maxSdkVersion="18" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.grubhub.android.permission.UA_DATA" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.grubhub.android.permission.UA_DATA"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.grubhub.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.grubhub.android.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"/>
+    <permission android:name="com.grubhub.android.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.grubhub.android.permission.RECEIVE_ADM_MESSAGE"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.grubhub.AppBaseLibrary.android.GHSApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="70886af7efec518b36c130cd46535ee7ee794850"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDfLof9NOyjWGiCX1rcPTF0cMdVucKwUlo"/>
+        <activity android:launchMode="singleTop" android:name="com.grubhub.AppBaseLibrary.android.GHSSplashActivity" android:screenOrientation="portrait" android:theme="@style/GHSSplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="@string/deep_link_host" android:pathPattern="@string/deep_link_path_pattern" android:scheme="@string/deep_link_scheme"/>
+                <data android:host="@string/deep_link_alt_host" android:pathPattern="@string/deep_link_alt_path_pattern" android:scheme="@string/deep_link_alt_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/taplytics_url_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.grubhub.AppBaseLibrary.android.welcome.GHSWelcomeActivity" android:screenOrientation="portrait" android:theme="@style/GHSSplashTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.grubhub.AppBaseLibrary.android.GHSMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.order.pastOrders.GHSPastOrdersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.account.GHSAccountSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.login.GHSLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.order.cart.GHSCartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.order.receipt.GHSReceiptActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.grubhub.AppBaseLibrary.android.review.GHSReviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+        <activity android:label="@string/title_activity_settings" android:name="com.grubhub.AppBaseLibrary.android.GHSPreferences"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.webContent.GHSWebViewActivity" android:parentActivityName="com.grubhub.AppBaseLibrary.android.GHSMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.order.favorites.GHSFavoritesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.grubhub.AppBaseLibrary.android.order.futureOrders.GHSFutureOrdersActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <service android:exported="false" android:name="com.grubhub.AppBaseLibrary.android.dataServices.services.GHSReviewService"/>
+        <service android:exported="false" android:name="com.grubhub.AppBaseLibrary.android.utils.GHSAmazonLaunchService"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.android.gms.wallet.EnableWalletOptimizationReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.grubhub.AppBaseLibrary.android.utils.urbanAirship.GHSPushIntentReceiver">
+            <intent-filter>
+                <action android:name="com.urbanairship.push.CHANNEL_UPDATED"/>
+                <action android:name="com.urbanairship.push.OPENED"/>
+                <action android:name="com.urbanairship.push.RECEIVED"/>
+                <action android:name="com.urbanairship.push.DISMISSED"/>
+                <category android:name="com.grubhub.android"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalTouchActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.braintreepayments.api.dropin.BraintreePaymentActivity"/>
+        <activity android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"/>
+        <amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false"/>
+        <activity android:name="com.urbanairship.actions.ActionActivity"/>
+        <activity android:name="com.urbanairship.CoreActivity"/>
+        <activity android:name="com.urbanairship.google.PlayServicesErrorActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.urbanairship.actions.LandingPageActivity" android:theme="@style/LandingPageStyle">
+            <meta-data android:name="com.urbanairship.action.LANDING_PAGE_VIEW" android:resource="@layout/ua_activity_landing_page"/>
+            <meta-data android:name="com.urbanairship.push.iam.EXCLUDE_FROM_AUTO_SHOW" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="message"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"/>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"/>
+        <service android:name="com.urbanairship.actions.ActionService"/>
+        <service android:name="com.urbanairship.richpush.RichPushUpdateService"/>
+        <service android:label="Segments Service" android:name="com.urbanairship.location.LocationService"/>
+        <service android:exported="false" android:name="com.urbanairship.push.UAInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.urbanairship.CoreReceiver">
+            <intent-filter android:priority="-999">
+                <action android:name="com.urbanairship.push.OPENED"/>
+                <category android:name="com.grubhub.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.grubhub.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.ADMPushReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION"/>
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE"/>
+                <category android:name="com.grubhub.android"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.grubhub.android.urbanairship.provider" android:exported="true" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider" android:permission="com.grubhub.android.permission.UA_DATA"/>
+    </application>
+</manifest>

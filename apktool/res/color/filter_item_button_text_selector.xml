@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/ghs_separator_line_default_color" />
+    <item android:state_checked="true" android:color="@color/ghs_actionable_color" />
+    <item android:color="@color/ghs_separator_line_default_color" />
+</selector>

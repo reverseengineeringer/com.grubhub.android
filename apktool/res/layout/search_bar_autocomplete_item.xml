@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_address_dropdown_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SearchBarAutoCompleteItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_bar_autocomplete_icon" android:layout_width="@dimen/autocomplete_icon_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/autocomplete_icon_margin" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/search_bar_autocomplete_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/search_bar_restaurant_distance" android:layout_toRightOf="@id/search_bar_autocomplete_icon" android:layout_centerVertical="true" android:contentDescription="@string/desc_search_autocomplete_result_value" style="@style/GHSFontDefaultLarge" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:id="@id/search_bar_restaurant_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/autocomplete_distance_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/GHSFontDefault" />
+</RelativeLayout>

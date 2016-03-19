@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CouponItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/coupon_indicator" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/text_coupon_selector" android:id="@id/coupon_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/coupon_indicator" android:layout_centerVertical="true" style="@style/CouponItemDescription" />
+</RelativeLayout>

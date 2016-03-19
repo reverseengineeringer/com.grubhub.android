@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.GHSOrderFlowPane android:gravity="bottom" android:id="@id/order_flow_pane" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="center" android:id="@id/payment_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:gravity="center|top" android:id="@id/search_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.grubhub.AppBaseLibrary.android.GHSOrderFlowPane>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.grubhub.AppBaseLibrary.android.views.GHSFeedbackView android:layout_gravity="bottom" android:id="@id/feedback_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.grubhub.AppBaseLibrary.android.views.GHSReviewPromptView android:layout_gravity="bottom" android:id="@id/review_prompt_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_overlay" />
+    <fragment android:name="com.grubhub.AppBaseLibrary.android.GHSNavigationDrawerFragment" android:layout_gravity="start" android:id="@id/navigation_drawer" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

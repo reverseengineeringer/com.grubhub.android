@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback_selection_options">
+        <item>I found a bug</item>
+        <item>Suggest a restaurant</item>
+        <item>Compliment</item>
+        <item>Suggestion</item>
+    </string-array>
+    <string-array name="months_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="pref_api_key_list_titles">
+        <item>DEV API KEY</item>
+        <item>PROD API KEY</item>
+    </string-array>
+    <string-array name="pref_api_key_list_values">
+        <item>@string/pref_api_key_choice1</item>
+        <item>@string/pref_api_key_choice2</item>
+    </string-array>
+    <string-array name="pref_new_api_list_titles">
+        <item>New API Server 1 (nyc1dvpkg01-qa3)</item>
+        <item>New API Server 2 (chi2dvdockr05-qa2)</item>
+        <item>New API Server 3 (chi2dvdockr03-mobiledev)</item>
+        <item>New API Server 4 (10.128.28.120)</item>
+        <item>New API Server 5 (labsapi.grubhub.com)</item>
+        <item>New API Server 6 (api.grubhub.com)</item>
+        <item>New API Server 7 (api-pp.grubhub.com)</item>
+        <item>New API Server 8 (api-gtm.grubhub.com)</item>
+    </string-array>
+    <string-array name="pref_new_api_list_values">
+        <item>@string/pref_new_api_choice1</item>
+        <item>@string/pref_new_api_choice2</item>
+        <item>@string/pref_new_api_choice3</item>
+        <item>@string/pref_new_api_choice4</item>
+        <item>@string/pref_new_api_choice5</item>
+        <item>@string/pref_new_api_choice6</item>
+        <item>@string/pref_new_api_choice7</item>
+        <item>@string/pref_new_api_choice8</item>
+    </string-array>
+    <string-array name="pref_old_api_list_titles">
+        <item>qa1.ghbeta.com</item>
+        <item>qa2.ghbeta.com</item>
+        <item>qa3.ghbeta.com</item>
+        <item>mobiledev.ghbeta.com</item>
+        <item>services.grubhub.com/services</item>
+        <item>cert1.ghbeta.com</item>
+    </string-array>
+    <string-array name="pref_old_api_list_values">
+        <item>@string/pref_old_api_choice1</item>
+        <item>@string/pref_old_api_choice2</item>
+        <item>@string/pref_old_api_choice3</item>
+        <item>@string/pref_old_api_choice4</item>
+        <item>@string/pref_old_api_choice5</item>
+        <item>@string/pref_old_api_choice6</item>
+    </string-array>
+    <string-array name="states_abbreviation_array">
+        <item>AL</item>
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DC</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+    <string-array name="states_array">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>District of Columbia</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+</resources>

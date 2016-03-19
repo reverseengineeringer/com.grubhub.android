@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ratings_reviews_thank_you" style="@style/ReviewCompleteHeaderText" />
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thank_you_feedback" android:contentDescription="@string/desc_ratings_reviews_review_complete" style="@style/ReviewCompleteImage" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:id="@id/review_complete_rate_more_header" android:background="@color/ghs_accent_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ratings_reviews_rate_more" style="@style/ReviewCompleteRateMore" />
+</LinearLayout>

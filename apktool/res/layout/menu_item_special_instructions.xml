@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ghs_background_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MenuItemSpecialInstructionsContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_item_special_instructions_label" style="@style/MenuItemSpecialInstructionsLabel" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:textColor="@color/ghs_primary_text_color" android:gravity="top" android:id="@id/special_instructions_edit_text" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/menu_item_special_instructions_hint" android:inputType="textLongMessage|textAutoCorrect|textCapSentences|textMultiLine" android:contentDescription="@string/desc_menu_item_special_instructions_field" style="@style/MenuItemSpecialInstructions" />
+</LinearLayout>

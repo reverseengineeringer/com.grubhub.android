@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/review_writeup_header" android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ratings_reviews_writeup_description" android:layout_alignParentTop="true" style="@style/ReviewWriteupHeader" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_gravity="left" android:id="@id/review_writeup_word_character_count" android:layout_alignParentBottom="true" style="@style/ReviewWriteupWordCharacterCount" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:textColor="@color/ghs_primary_text_color" android:gravity="top" android:id="@id/review_writeup_edit_text" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/review_writeup_word_character_count" android:layout_below="@id/review_writeup_header" android:inputType="textLongMessage|textAutoCorrect|textCapSentences|textMultiLine" android:contentDescription="@string/desc_ratings_reviews_edit_text" style="@style/ReviewWriteupEditText" />
+</RelativeLayout>

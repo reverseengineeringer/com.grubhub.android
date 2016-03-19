@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/checkout_item_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/CheckoutItemAmount" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/checkout_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkout_item_amount" android:layout_alignParentLeft="true" style="@style/CheckoutItemName" />
+</RelativeLayout>

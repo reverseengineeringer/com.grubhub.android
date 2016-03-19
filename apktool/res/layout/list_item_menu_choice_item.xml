@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ghs="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/menu_choice_highlight" android:background="@color/ghs_accent_transparent_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MenuChoiceItemContainer">
+        <FrameLayout android:id="@id/menu_choice_dropdown_icon_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/menu_choice_name" android:layout_alignBottom="@id/menu_choice_name" android:layout_alignParentRight="true">
+            <com.grubhub.AppBaseLibrary.android.views.GHSCaret android:layout_gravity="center" android:id="@id/menu_choice_dropdown_icon" ghs:triangleColor="@color/ghs_inactive_color" ghs:triangleOrientation="normal" style="@style/MenuChoiceDropdownIcon" />
+        </FrameLayout>
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/menu_choice_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/menu_choice_dropdown_icon_wrapper" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/MenuChoiceItemName" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/menu_choice_selection" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_item_make_a_choice" android:layout_toLeftOf="@id/menu_choice_dropdown_icon_wrapper" android:layout_below="@id/menu_choice_name" android:layout_alignParentLeft="true" style="@style/MenuChoiceItemSelection" />
+    </RelativeLayout>
+</FrameLayout>

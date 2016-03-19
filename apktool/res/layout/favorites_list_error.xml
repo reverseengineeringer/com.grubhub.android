@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_favorites_icon" android:background="@drawable/ghs_ic_no_favorites" android:layout_width="@dimen/favorites_no_results_width" android:layout_height="@dimen/favorites_no_results_height" android:contentDescription="@string/desc_favorites_no_results" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_horizontal" android:id="@id/favorites_error_message" android:padding="@dimen/favorites_error_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_favorites_no_results" android:contentDescription="@string/error_search_splash_text" style="@style/GHSFontDefaultLarge" />
+</LinearLayout>

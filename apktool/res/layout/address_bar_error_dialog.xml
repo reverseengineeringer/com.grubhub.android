@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/address_dialog" android:background="@drawable/bg_address_dialog" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressErrorDialogContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_header_address_locating" style="@style/AddressErrorDialogTitle" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressDialogButtonContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/ghs_actionable_color" android:id="@id/address_try_again_button" android:background="?android:selectableItemBackground" android:layout_width="0.0dip" android:text="@string/address_button_try_again" android:layout_weight="1.0" android:contentDescription="@string/desc_address_try_again_button" style="@style/AddressDialogButton" />
+        <View android:layout_height="fill_parent" style="@style/AddressDialogButtonSpacer" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/ghs_actionable_color" android:id="@id/address_enter_address_button" android:background="?android:selectableItemBackground" android:layout_width="0.0dip" android:text="@string/address_button_enter_address" android:layout_weight="1.0" android:contentDescription="@string/desc_address_enter_address_button" style="@style/AddressDialogButton" />
+    </LinearLayout>
+</LinearLayout>

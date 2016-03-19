@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/CartItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/edit_button_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/edit_item" android:background="@color/ghs_actionable_color" android:layout_height="fill_parent" android:contentDescription="@string/desc_saved_addresses_edit_item" style="@style/CartItemButton">
+            <ImageView android:layout_gravity="center_horizontal" android:src="@drawable/ghs_ic_edit_item" style="@style/CartItemEditIcon" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_edit_item" style="@style/GHSFontDefault" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/delete_item" android:background="@color/ghs_accent_color" android:layout_height="fill_parent" android:contentDescription="@string/desc_delete_button_saved_addresses" style="@style/CartItemButton">
+            <ImageView android:layout_gravity="center_horizontal" android:src="@drawable/ghs_ic_delete_item" style="@style/CartItemDeleteIcon" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_delete_item" style="@style/GHSFontDefault" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/slide_container" android:background="@color/ghs_background_no_color" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_container_saved_addresses" style="@style/SavedAddressContainer">
+        <RadioButton android:id="@id/saved_address_radio_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_radio_button_saved_addresses" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:id="@id/saved_address_label" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/saved_address_radio_button" android:contentDescription="@string/desc_address_label_saved_addresses" style="@style/SavedAddressLabel" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:gravity="center_vertical" android:id="@id/saved_address_info" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/saved_address_radio_button" android:layout_below="@id/saved_address_label" android:contentDescription="@string/desc_text_info_saved_addresses" style="@style/SavedAddressInfo" />
+    </RelativeLayout>
+</FrameLayout>

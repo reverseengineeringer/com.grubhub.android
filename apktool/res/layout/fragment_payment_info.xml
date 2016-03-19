@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/payment_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/payment_info_required_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pickup_info_required_label" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/YourInfoRequiredLabel" />
+            <FrameLayout android:id="@id/selection_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/payment_info_required_label" style="@style/YourInfoPaymentSelector" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/payment_info_card_number_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_info_card_number" android:layout_below="@id/selection_spinner" style="@style/YourInfoLabel" />
+            <RelativeLayout android:id="@id/payment_card_number_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/payment_info_card_number_label" style="@style/PaymentCardNumberContainer">
+                <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:textColor="@color/ghs_primary_text_color" android:id="@id/payment_info_card_number_edit_text" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_toLeftOf="@id/payment_scan_card_button" android:inputType="number" android:contentDescription="@string/desc_payment_credit_card_number" style="@style/YourInfoEditText" />
+                <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector" android:gravity="center" android:id="@id/payment_scan_card_button" android:background="@drawable/bg_rounded_button_selector" android:layout_width="wrap_content" android:text="@string/payment_info_scan" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/PaymentScanButton" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/payment_info_expiration_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/payment_card_number_wrapper">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_info_expiration_month" style="@style/YourInfoLabel" />
+                    <Spinner android:id="@id/payment_info_month_spinner" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/desc_payment_expiration_month" style="@style/AccountInfoSpinner" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_info_expiration_year" style="@style/YourInfoLabel" />
+                    <Spinner android:id="@id/payment_info_year_spinner" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/desc_payment_expiration_year" style="@style/AccountInfoSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/payment_info_code_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/payment_info_expiration_container" style="@style/PaymentCodeContainer">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/billing_info_code_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_info_security_code" style="@style/YourInfoLabel" />
+                    <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:textColor="@color/ghs_primary_text_color" android:id="@id/payment_info_code_edit_text" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_below="@id/billing_info_code_label" android:inputType="number" android:imeOptions="actionNext" android:contentDescription="@string/desc_security_code" style="@style/YourInfoEditText" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/payment_info_zip_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_info_zip" style="@style/YourInfoLabel" />
+                    <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:textColor="@color/ghs_primary_text_color" android:id="@id/payment_info_zip_edit_text" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_below="@id/payment_info_zip_label" android:inputType="number" android:imeOptions="actionGo" android:contentDescription="@string/desc_payment_zipcode" style="@style/YourInfoEditText" />
+                </RelativeLayout>
+            </LinearLayout>
+            <CheckBox android:id="@id/payment_info_save_credit_card_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/bg_save_credit_card_checkbox" android:text="@string/payment_info_save_credit_card_info" android:layout_below="@id/payment_info_code_container" android:contentDescription="@string/desc_save_card_checkbox" style="@style/YourInfoSaveCreditCard" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector_inverted" android:id="@id/payment_info_save_button" android:background="@drawable/bg_rounded_button_selector_inverted" android:layout_width="fill_parent" android:text="@string/account_info_save_and_proceed" android:layout_below="@id/payment_info_save_credit_card_checkbox" android:contentDescription="@string/desc_pickup_info_save_button" style="@style/YourInfoSaveButton" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

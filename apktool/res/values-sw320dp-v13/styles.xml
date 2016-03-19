@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/ghs_background_no_color</item>
+        <item name="spinBars">false</item>
+        <item name="drawableSize">48.0dip</item>
+        <item name="gapBetweenBars">3.0dip</item>
+        <item name="thickness">5.0dip</item>
+    </style>
+    <style name="AccountInfoSpinner" parent="@style/GHSFontDefault">
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="AccountInfoSpinnerItem" parent="@style/YourInfoEditText">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="AddAddressFooter" parent="@style/GHSFontDefaultLarge">
+        <item name="android:padding">16.0dip</item>
+    </style>
+    <style name="AddressBar">
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/address_bar_height</item>
+        <item name="addressDialogPadding">8.0dip</item>
+    </style>
+    <style name="AddressBarAutoCompleteGoogleLogo">
+        <item name="android:layout_width">104.0dip</item>
+        <item name="android:layout_height">16.0dip</item>
+        <item name="android:layout_margin">4.0dip</item>
+    </style>
+    <style name="AddressBarAutoCompleteItem" parent="@style/GHSFontDefault" />
+    <style name="AddressBarAutoCompleteItemContainer">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:minHeight">40.0dip</item>
+    </style>
+    <style name="AddressBarAutoCompleteRecentIcon">
+        <item name="android:layout_width">28.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="AddressBarAutoCompleteTextView" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">28.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="AddressBarCancelButton" parent="@style/GHSFontActionBarMenu">
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="AddressBarClearButton">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">16.0dip</item>
+    </style>
+    <style name="AddressBarDescription" parent="@style/GHSFontDefault">
+        <item name="android:paddingBottom">2.0dip</item>
+    </style>
+    <style name="AddressBarDivider">
+        <item name="android:background">@color/ghs_separator_line_default_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="AddressBarOptionsButton" parent="@style/GHSFontDefault" />
+    <style name="AddressBarOptionsButtonSeparator">
+        <item name="android:background">@drawable/bg_rounded_button_toggle_separator</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="AddressBarOptionsContainer">
+        <item name="android:padding">12.0dip</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="AddressBarSavedAddressContainer">
+        <item name="android:padding">12.0dip</item>
+    </style>
+    <style name="AddressBarSavedAddressInfo" parent="@style/GHSFontDefault" />
+    <style name="AddressBarSavedAddressLabel" parent="@style/GHSFontMenuItemTitle" />
+    <style name="AddressBarSearchIcon">
+        <item name="android:layout_width">18.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+    </style>
+    <style name="AddressBarSpacer">
+        <item name="android:layout_height">0.0dip</item>
+    </style>
+    <style name="AddressBarTitle" parent="@style/GHSFontMenuItemTitle" />
+    <style name="AddressDialogButton" parent="@style/GHSFontDefaultLarge">
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="AddressDialogButtonContainer">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="AddressDialogButtonSpacer">
+        <item name="android:layout_width">12.0dip</item>
+    </style>
+    <style name="AddressDialogDescriptionContainer">
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="AddressDialogIndicator">
+        <item name="android:layout_width">26.0dip</item>
+        <item name="android:layout_height">12.0dip</item>
+    </style>
+    <style name="AddressDialogTitle" parent="@style/AddressBarTitle">
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="AddressDivider">
+        <item name="android:background">@color/ghs_separator_line_default_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">20.0dip</item>
+    </style>
+    <style name="AddressDropdownLocationSearch">
+        <item name="android:padding">12.0dip</item>
+    </style>
+    <style name="AddressErrorDialogContainer">
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="AddressErrorDialogTitle" parent="@style/AddressBarTitle">
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="AddressLabel" parent="@style/GHSFontTertiaryLarge">
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="AddressLabelCentre" parent="@style/AddressLabel">
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_marginRight">12.0dip</item>
+    </style>
+    <style name="AddressLabelCustom">
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="AddressLabelDivider">
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+    <style name="AddressLabelsContainer">
+        <item name="android:layout_marginLeft">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+    </style>
+    <style name="AddressLocationSearchIcon">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="AddressLocationServicesDialogButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="AddressLocationServicesDialogButtonSpacer">
+        <item name="android:layout_height">24.0dip</item>
+    </style>
+    <style name="AddressStateSpinnerViewArrow" parent="@style/MenuChoiceDropdownIcon">
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="AddressValidationContainer">
+        <item name="android:padding">20.0dip</item>
+    </style>
+    <style name="AddressValidationDescription" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="AddressValidationEditText" parent="@style/GHSFontDefault">
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="AddressValidationLabel" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="AddressValidationRetryText" parent="@style/GHSFontDefault" />
+    <style name="BreadCrumbContainer">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+    </style>
+    <style name="BreadCrumbDivider">
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="BreadCrumbLine">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">6.0dip</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+    </style>
+    <style name="CartAddMoreItems">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/cart_edge_padding</item>
+        <item name="android:layout_marginTop">@dimen/cart_edge_padding</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+        <item name="android:layout_marginBottom">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartAlternative" parent="@style/CartButton">
+        <item name="android:padding">@dimen/cart_subtotal_child_padding</item>
+    </style>
+    <style name="CartBottom">
+        <item name="android:paddingLeft">@dimen/cart_edge_padding</item>
+        <item name="android:paddingRight">@dimen/cart_edge_padding</item>
+        <item name="android:paddingBottom">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="CartButtonIcon">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">16.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <style name="CartClosed" parent="@style/GHSFontSectionHeader">
+        <item name="android:padding">4.0dip</item>
+    </style>
+    <style name="CartCouponContainer">
+        <item name="android:padding">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartCouponIcon">
+        <item name="android:layout_width">22.0dip</item>
+        <item name="android:layout_height">22.0dip</item>
+        <item name="android:layout_marginRight">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartCoupons">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginTop">@dimen/cart_edge_padding</item>
+        <item name="android:layout_marginRight">@dimen/cart_edge_padding</item>
+        <item name="android:layout_marginBottom">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartDelivery" parent="@style/CartButton">
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="CartEmptyBagContainer" parent="@style/CartButton">
+        <item name="android:padding">@dimen/cart_subtotal_child_padding</item>
+    </style>
+    <style name="CartEmptyBagIcon">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="CartItem">
+        <item name="android:layout_margin">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartItemButton">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_width">@dimen/cart_item_button_width</item>
+    </style>
+    <style name="CartItemCount" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:layout_width">22.0dip</item>
+        <item name="android:layout_marginRight">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartItemDeleteIcon">
+        <item name="android:layout_width">24.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+    <style name="CartItemEditIcon">
+        <item name="android:layout_width">24.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+    <style name="CartItemList">
+        <item name="android:divider">@drawable/separator_line_dotted</item>
+        <item name="android:dividerHeight">2.0dip</item>
+        <item name="android:layerType">software</item>
+    </style>
+    <style name="CartItemSlider">
+        <item name="android:padding">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartOrderTypeIcon">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="CartPickup" parent="@style/CartButton">
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="CartRestaurantName" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:paddingLeft">@dimen/cart_edge_padding</item>
+        <item name="android:paddingTop">@dimen/cart_edge_padding</item>
+        <item name="android:paddingRight">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartSubtotal">
+        <item name="android:paddingLeft">@dimen/cart_subtotal_padding_left</item>
+        <item name="android:paddingTop">@dimen/cart_subtotal_padding_top</item>
+        <item name="android:paddingRight">@dimen/cart_edge_padding</item>
+        <item name="android:paddingBottom">118.0dip</item>
+    </style>
+    <style name="CartTipButton" parent="@style/GHSFontDefault">
+        <item name="android:padding">3.0dip</item>
+    </style>
+    <style name="CartTipButtonContainer">
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_height">64.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="CartTipButtonCustom" parent="@style/GHSFontDefault">
+        <item name="android:padding">3.0dip</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+    </style>
+    <style name="CartTipButtonSeparator">
+        <item name="android:background">@drawable/bg_rounded_button_toggle_separator</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="CartTipSelector">
+        <item name="android:paddingLeft">@dimen/cart_edge_padding</item>
+        <item name="android:paddingRight">@dimen/cart_edge_padding</item>
+    </style>
+    <style name="CartUpdateTipButton">
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="CartUpdateTipCaret">
+        <item name="android:layout_width">15.0dip</item>
+        <item name="android:layout_height">8.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="CartUpdateTipIcon">
+        <item name="android:layout_width">25.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+    </style>
+    <style name="CartUpdateTipPercentage" parent="@style/GHSFontMenuItemInfo">
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="CartUpdateTipText" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="CheckoutButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_marginLeft">@dimen/checkout_side_padding</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginRight">@dimen/checkout_side_padding</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="CheckoutDivider">
+        <item name="android:background">@color/ghs_separator_line_default_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="CheckoutFutureOrderDisclaimer" parent="@style/GHSFontPreviewItalic">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+    </style>
+    <style name="CheckoutItemAmount" parent="@style/GHSFontMenuItemInfo" />
+    <style name="CheckoutItemContainer">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="CheckoutItemName" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="CheckoutScrollContainer">
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="CheckoutSectionHeader" parent="@style/GHSFontSectionHeader">
+        <item name="android:textColor">@color/ghs_light_text_color</item>
+        <item name="android:background">@color/ghs_accent_color</item>
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="CheckoutSectionSubHeader" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="CheckoutSectionSubText" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="CheckoutSubHeader" parent="@style/GHSFontSubHeader" />
+    <style name="CheckoutSubValue" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingLeft">5.0dip</item>
+    </style>
+    <style name="CheckoutTotalAmount" parent="@style/GHSFontSubHeader" />
+    <style name="CheckoutTotalName" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="CouponHeader" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="CouponItemAvailableDescription" parent="@style/GHSFontSecondary">
+        <item name="android:textColor">@color/ghs_secondary_text_color</item>
+    </style>
+    <style name="CouponItemAvailableDescriptionContainer">
+        <item name="android:paddingLeft">32.0dip</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingRight">32.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+    </style>
+    <style name="CouponItemContainer">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="CouponItemDescription" parent="@style/GHSFontDefault" />
+    <style name="CouponOverlayImage">
+        <item name="android:layout_width">51.0dip</item>
+        <item name="android:layout_height">51.0dip</item>
+        <item name="android:layout_marginTop">60.0dip</item>
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="CouponOverlayImageContainer">
+        <item name="android:layout_width">260.0dip</item>
+        <item name="android:layout_height">220.0dip</item>
+    </style>
+    <style name="CustomLabelContainer">
+        <item name="android:paddingTop">6.0dip</item>
+    </style>
+    <style name="CustomLabelEditButton">
+        <item name="android:layout_width">24.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="CustomLabelEditText" parent="@style/GHSFontDefault">
+        <item name="android:paddingRight">32.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="CustomTipButton" parent="@style/GHSFontDefault" />
+    <style name="CustomTipButtonSpacer">
+        <item name="android:layout_width">8.0dip</item>
+    </style>
+    <style name="CustomTipClearButton">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="CustomTipContainer">
+        <item name="android:padding">16.0dip</item>
+    </style>
+    <style name="CustomTipEditText" parent="@style/GHSFontDefault">
+        <item name="android:minHeight">42.0dip</item>
+    </style>
+    <style name="CustomTipEditTextContainer">
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="CustomTipTitle" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="EditAccountInfoOption">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_height">56.0dip</item>
+    </style>
+    <style name="EditAccountInfoOptionText" parent="@style/GHSFontDefaultLarge">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_height">56.0dip</item>
+    </style>
+    <style name="FeedbackConfirmationNegativeButton" parent="@style/GHSFontDefault">
+        <item name="android:padding">12.0dip</item>
+        <item name="android:layout_marginBottom">36.0dip</item>
+    </style>
+    <style name="FeedbackConfirmationPositiveButton" parent="@style/GHSFontTertiaryLarge">
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:layout_marginBottom">24.0dip</item>
+    </style>
+    <style name="FeedbackConfirmationTitle" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:layout_marginTop">60.0dip</item>
+        <item name="android:layout_marginBottom">42.0dip</item>
+    </style>
+    <style name="FeedbackDialogCloseButton">
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="FeedbackDialogDivider">
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="FeedbackDialogHeader">
+        <item name="android:layout_height">42.0dip</item>
+    </style>
+    <style name="FeedbackItemContainer">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="FeedbackItemText" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="FeedbackSelectionList">
+        <item name="android:dividerHeight">1.0dip</item>
+    </style>
+    <style name="FeedbackSelectionTitle" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="FilterApplyButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_marginLeft">@dimen/search_filter_button_side_padding</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">@dimen/search_filter_button_side_padding</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="GHSWelcomeAddressBarContainer">
+        <item name="android:background">@drawable/bg_welcome_address</item>
+        <item name="android:layout_marginTop">@dimen/welcome_screen_address_bar_marginTop</item>
+    </style>
+    <style name="GHSWelcomeGeoLocateDropdown">
+        <item name="android:layout_marginLeft">@dimen/welcome_screen_geo_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/welcome_screen_geo_marginTop</item>
+        <item name="android:layout_marginRight">@dimen/welcome_screen_geo_marginRight</item>
+    </style>
+    <style name="GHSWelcomePreviousButton">
+        <item name="android:paddingLeft">@dimen/welcome_screen_prev_button_padding</item>
+        <item name="android:paddingTop">@dimen/welcome_screen_prev_button_padding</item>
+        <item name="android:paddingRight">@dimen/welcome_screen_prev_button_padding</item>
+        <item name="android:paddingBottom">@dimen/welcome_screen_prev_button_padding</item>
+    </style>
+    <style name="GHSWelcomeScreenSecondaryContent">
+        <item name="android:background">@drawable/bg_welcome_secondary</item>
+        <item name="android:paddingLeft">@dimen/welcome_screen_sec_content_paddingLeft</item>
+        <item name="android:paddingTop">@dimen/welcome_screen_sec_content_paddingTop</item>
+        <item name="android:paddingRight">@dimen/welcome_screen_sec_content_paddingRight</item>
+        <item name="android:paddingBottom">@dimen/welcome_screen_sec_content_paddingBottom</item>
+        <item name="android:layout_marginLeft">@dimen/welcome_screen_sec_content_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/welcome_screen_sec_content_marginRight</item>
+    </style>
+    <style name="LoadingMoreRestaurants">
+        <item name="android:padding">4.0dip</item>
+    </style>
+    <style name="LoadingViewFlipperErrorText" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="LoadingViewFlipperLoadingText" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="LoginAlert" parent="@style/GHSFontPreview">
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+    <style name="LoginButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_padding</item>
+        <item name="android:layout_marginTop">16.0dip</item>
+        <item name="android:layout_marginRight">@dimen/login_side_padding</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="LoginClearButton">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="LoginCreateAccountRoot">
+        <item name="android:paddingTop">60.0dip</item>
+        <item name="android:paddingBottom">30.0dip</item>
+    </style>
+    <style name="LoginDivider">
+        <item name="android:background">@color/ghs_separator_line_default_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="LoginEditText" parent="@style/GHSFontDefault">
+        <item name="android:layout_height">@dimen/login_field_height</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/login_side_padding</item>
+        <item name="android:layout_marginBottom">18.0dip</item>
+    </style>
+    <style name="LoginForgotPassword" parent="@style/GHSFontSubHeader">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="LoginHeaderContainer">
+        <item name="android:paddingLeft">@dimen/login_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/login_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="LoginHeaderMessage" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingRight">8.0dip</item>
+    </style>
+    <style name="LoginLabel" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_marginLeft">@dimen/login_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/login_side_padding</item>
+    </style>
+    <style name="LoginLegalAndPrivacy">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="LoginPasswordEditText" parent="@style/LoginEditText">
+        <item name="android:paddingRight">60.0dip</item>
+    </style>
+    <style name="LoginProgressBar">
+        <item name="android:layout_width">36.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="LoginRequiredLabel" parent="@style/GHSFontSecondary">
+        <item name="android:paddingLeft">8.0dip</item>
+    </style>
+    <style name="LoginShowPassword" parent="@style/GHSSwitch">
+        <item name="android:layout_marginLeft">@dimen/login_side_padding</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">@dimen/login_side_padding</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="MenuCancelButton" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    <style name="MenuChoiceCategoryName" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="MenuChoiceDropdownIcon">
+        <item name="android:layout_width">14.0dip</item>
+        <item name="android:layout_height">8.0dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+    <style name="MenuChoiceItemContainer">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="MenuChoiceItemName" parent="@style/GHSFontMenuItemTitle" />
+    <style name="MenuChoiceItemSelection" parent="@style/GHSFontMenuItemInfo" />
+    <style name="MenuItemButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_marginLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">@dimen/menu_item_side_padding</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="MenuItemButtonContainer">
+        <item name="android:layout_height">80.0dip</item>
+    </style>
+    <style name="MenuItemDescription" parent="@style/GHSFontDefault">
+        <item name="android:paddingTop">10.0dip</item>
+    </style>
+    <style name="MenuItemHeaderContainer">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="MenuItemName" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:paddingRight">5.0dip</item>
+    </style>
+    <style name="MenuItemPopularIcon">
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="MenuItemPrice" parent="@style/GHSFontMenuItemTitle" />
+    <style name="MenuItemQuantityContainer" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">@dimen/menu_item_bottom_padding</item>
+    </style>
+    <style name="MenuItemQuantityLabel" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingTop">12.0dip</item>
+    </style>
+    <style name="MenuItemQuantitySpinnerItem" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="MenuItemQuantityValue" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="MenuItemSpecialInstructions" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/menu_item_side_padding</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLength">@integer/max_characters_special_instructions</item>
+    </style>
+    <style name="MenuItemSpecialInstructionsCharacterCount" parent="@style/GHSFontDefault">
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/menu_item_side_padding</item>
+    </style>
+    <style name="MenuItemSpecialInstructionsContainer">
+        <item name="android:paddingBottom">24.0dip</item>
+    </style>
+    <style name="MenuItemSpecialInstructionsDivider">
+        <item name="android:background">@color/ghs_separator_line_default_color</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="MenuItemSpecialInstructionsGoButton">
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">36.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/menu_item_side_padding</item>
+    </style>
+    <style name="MenuItemSpecialInstructionsLabel" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="MenuItemSpecialInstructionsText" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="MenuItemSubContainer">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:layout_height">60.0dip</item>
+        <item name="android:minHeight">60.0dip</item>
+    </style>
+    <style name="MenuOptionDescription" parent="@style/GHSFontMenuItemTitle" />
+    <style name="MenuOptionHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="MenuOptionItemContainer">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="MenuOptionLimit" parent="@style/GHSFontMenuItemInfo" />
+    <style name="MenuOptionPrice" parent="@style/GHSFontMenuItemInfo" />
+    <style name="MenuOptionTitle" parent="@style/GHSFontMenuItemTitle" />
+    <style name="MethodOfPaymentDivider">
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="MethodOfPaymentItem" parent="@style/YourInfoLabel">
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="MethodsOfPayment">
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="MultiLineEditText" parent="@style/YourInfoEditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36.0dip</item>
+    </style>
+    <style name="NavigationActionItemDivider">
+        <item name="android:background">@drawable/separator_line_dotted</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+    <style name="NavigationDrawerList">
+        <item name="android:layerType">software</item>
+    </style>
+    <style name="NewUserViewContainer">
+        <item name="android:layout_height">@dimen/new_user_view_height</item>
+    </style>
+    <style name="NewUserViewMessage" parent="@style/GHSFontDefaultLarge">
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="Notification">
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="OrderStatusErrorMessage" parent="@style/GHSFontDefaultLarge">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    <style name="OrderStatusEvent">
+        <item name="android:paddingLeft">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="OrderStatusEventMessage" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">8.0dip</item>
+    </style>
+    <style name="OrderStatusEventTitle" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingLeft">8.0dip</item>
+    </style>
+    <style name="OrderStatusRestaurantContainer">
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingBottom">24.0dip</item>
+    </style>
+    <style name="OrderStatusSecondaryErrorMessage" parent="@style/OrderStatusErrorMessage">
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="OrderTrackingCTA">
+        <item name="android:paddingLeft">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="OrderTrackingCTAIcon">
+        <item name="android:layout_width">21.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="OrderTrackingCourierPhoto">
+        <item name="android:layout_width">50.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="OrderTrackingErrorIcon">
+        <item name="android:layout_width">62.0dip</item>
+        <item name="android:layout_height">87.0dip</item>
+        <item name="android:layout_marginBottom">18.0dip</item>
+    </style>
+    <style name="OrderTrackingStatusIcon">
+        <item name="android:layout_width">23.0dip</item>
+        <item name="android:layout_height">23.0dip</item>
+    </style>
+    <style name="OutOfRangeProgressBar">
+        <item name="android:layout_width">28.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="OutOfRangeSwitchToPickupButton" parent="@style/YourInfoSaveButton">
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+    </style>
+    <style name="OutOfRangeText" parent="@style/GHSFontTertiaryLarge">
+        <item name="android:layout_marginLeft">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+    </style>
+    <style name="PastOrderAddItemsOrViewMenuButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:textColor">@color/text_rounded_button_selector_inverted</item>
+        <item name="android:background">@drawable/bg_rounded_button_selector_inverted</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PastOrderButtonGreyContainer">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/ghs_background_color</item>
+        <item name="android:padding">@dimen/past_orders_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PastOrderRateReviewButton" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="PastOrderRateReviewViewButton" parent="@style/GHSFontDefault">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PastOrderRatingContainer">
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="PastOrderViewDateTime" parent="@style/GHSFontDefault">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PastOrderViewDivider">
+        <item name="android:background">@color/ghs_separator_line_default_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="PastOrderViewFoodItems" parent="@style/GHSFontDefault">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="PastOrderViewList">
+        <item name="android:background">@color/ghs_background_no_color</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+    <style name="PastOrderViewOrderType" parent="@style/GHSFontSubHeader">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PastOrderViewPrice" parent="@style/GHSFontDefault">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">60.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="PastOrderViewRestaurantName" parent="@style/GHSFontSectionHeader">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:padding">@dimen/past_orders_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PastOrderYourRatingLabel" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="PastOrdersDateTime" parent="@style/GHSFontDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+    </style>
+    <style name="PastOrdersFoodItems" parent="@style/GHSFontDefault">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/past_orders_padding</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="PastOrdersList">
+        <item name="android:background">@color/ghs_background_no_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:divider">@color/ghs_separator_line_default_color</item>
+        <item name="android:dividerHeight">1.0dip</item>
+    </style>
+    <style name="PastOrdersListItem">
+        <item name="android:layout_margin">@dimen/past_orders_padding</item>
+    </style>
+    <style name="PastOrdersOrderType" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+    </style>
+    <style name="PastOrdersRestaurantName" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+    </style>
+    <style name="PaymentCardNumberContainer">
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="PaymentCodeContainer">
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="PaymentScanButton" parent="@style/GHSFontTertiary">
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+    </style>
+    <style name="PaymentSelectionEditButton" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_height">42.0dip</item>
+    </style>
+    <style name="PaymentSelectionSpinner">
+        <item name="android:layout_marginLeft">@dimen/payment_spinner_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/payment_spinner_marginLeft</item>
+        <item name="android:dropDownVerticalOffset">@dimen/payment_spinner_vertical_dropdown_offset</item>
+    </style>
+    <style name="PhoneOnlyButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_margin">15.0dip</item>
+    </style>
+    <style name="PhoneOnlyContainer">
+        <item name="android:layout_height">75.0dip</item>
+    </style>
+    <style name="PopupPromptDescription" parent="@style/GHSFontDefault">
+        <item name="android:textColor">@color/ghs_light_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="PopupPromptNegativeButton" parent="@style/GHSFontDefault">
+        <item name="android:textColor">@color/text_rounded_button_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_rounded_button_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">42.0dip</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+    </style>
+    <style name="PopupPromptPositiveButton" parent="@style/GHSFontDefault">
+        <item name="android:textColor">@color/text_rounded_button_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_rounded_button_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">42.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="PopupPromptViewContainer">
+        <item name="android:background">@color/ghs_actionable_color</item>
+        <item name="android:padding">12.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PopupViewContainer">
+        <item name="android:padding">24.0dip</item>
+    </style>
+    <style name="PopupViewNegativeButton" parent="@style/GHSFontDefault">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">16.0dip</item>
+        <item name="android:layout_marginRight">24.0dip</item>
+    </style>
+    <style name="PopupViewPositiveButton" parent="@style/GHSFontDefault">
+        <item name="android:layout_width">11.0dip</item>
+        <item name="android:layout_height">19.0dip</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+    </style>
+    <style name="RatingStar">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">15.0dip</item>
+    </style>
+    <style name="ReceiptOrderInstructions" parent="@style/GHSFontSecondary" />
+    <style name="ReceiptOrderInstructionsContainer">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+    <style name="ReceiptOrderInstructionsSubHeader" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="ReceiptOrderPaymentHolderContainer" parent="@style/GHSFontSecondary">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+    </style>
+    <style name="ReceiptPaymentType">
+        <item name="android:paddingTop">6.0dip</item>
+    </style>
+    <style name="ReceiptPickupMap">
+        <item name="android:layout_height">160.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="ReceiptSectionHeader" parent="@style/GHSFontSectionHeader">
+        <item name="android:textColor">@color/ghs_light_text_color</item>
+        <item name="android:background">@color/ghs_accent_color</item>
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="ReceiptSubHeader" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+    </style>
+    <style name="ReceiptThankYouImage">
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="RestaurantDetailsDivider">
+        <item name="android:background">@color/ghs_separator_line_default_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="RestaurantDetailsHeader" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="RestaurantDetailsHoursOfOperation" parent="@style/RestaurantDetailsText">
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+    </style>
+    <style name="RestaurantDetailsHoursOfOperationItemContainer">
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="RestaurantDetailsHoursOfOperationsContainer">
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+    <style name="RestaurantDetailsSubHeader" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+    </style>
+    <style name="RestaurantDetailsText" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+    </style>
+    <style name="RestaurantHeaderButtonContainer">
+        <item name="android:paddingLeft">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingTop">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingRight">@dimen/restaurant_header_padding</item>
+    </style>
+    <style name="RestaurantHeaderCashOrCredit" parent="@style/GHSFontDefault" />
+    <style name="RestaurantHeaderContainer">
+        <item name="android:padding">@dimen/restaurant_header_padding</item>
+    </style>
+    <style name="RestaurantHeaderCouponIcon">
+        <item name="android:layout_width">22.0dip</item>
+        <item name="android:layout_height">22.0dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <style name="RestaurantHeaderCoupons">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="RestaurantHeaderCouponsButtonIcon">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">16.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <style name="RestaurantHeaderDescription" parent="@style/GHSNavListItemDescription">
+        <item name="android:layout_marginRight">@dimen/restaurant_header_padding</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="RestaurantHeaderDescriptionSubContainer">
+        <item name="android:layout_marginRight">@dimen/restaurant_header_padding</item>
+    </style>
+    <style name="RestaurantHeaderDetails">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="RestaurantHeaderDetailsButtonIcon">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">5.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="RestaurantHeaderDotDivider">
+        <item name="android:layout_width">2.0dip</item>
+        <item name="android:layout_height">2.0dip</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <style name="RestaurantHeaderImage">
+        <item name="android:layout_width">@dimen/restaurant_header_view_logo_width</item>
+        <item name="android:layout_height">@dimen/restaurant_header_view_logo_height</item>
+        <item name="android:layout_marginRight">@dimen/restaurant_header_padding</item>
+    </style>
+    <style name="RestaurantHeaderMatchingItemsContainer">
+        <item name="android:paddingLeft">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/restaurant_header_padding</item>
+        <item name="android:layout_marginTop">@dimen/restaurant_header_padding</item>
+        <item name="android:layout_marginRight">@dimen/restaurant_header_padding</item>
+    </style>
+    <style name="RestaurantHeaderMatchingItemsCount" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:padding">2.0dip</item>
+        <item name="android:layout_width">36.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="RestaurantHeaderMatchingItemsLabel" parent="@style/GHSFontMenuItemTitle">
+        <item name="android:layout_marginLeft">16.0dip</item>
+    </style>
+    <style name="RestaurantHeaderName" parent="@style/GHSFontSmallSectionHeader">
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="RestaurantHeaderReviewContainer">
+        <item name="android:layout_marginBottom">2.0dip</item>
+    </style>
+    <style name="RestaurantHeaderReviews" parent="@style/GHSFontSectionHeader">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="RestaurantMenuCategoriesClickArea">
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="RestaurantMenuCategoriesIcon">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <style name="RestaurantMenuCategory" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="RestaurantMenuListDivider">
+        <item name="android:background">@drawable/separator_line_dotted</item>
+        <item name="android:layout_height">2.0dip</item>
+        <item name="android:layerType">software</item>
+    </style>
+    <style name="RestaurantMenuRefine">
+        <item name="android:layout_marginLeft">8.0dip</item>
+    </style>
+    <style name="RestaurantMenuSearchBar">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_height">@dimen/restaurant_list_header_height</item>
+    </style>
+    <style name="RestaurantMenuSearchBarSpacer">
+        <item name="android:layout_height">@dimen/restaurant_list_header_height</item>
+    </style>
+    <style name="RestaurantMenuSearchCancelButton" parent="@style/GHSFontActionBarMenu">
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+    </style>
+    <style name="RestaurantMenuSearchClearButton">
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+    </style>
+    <style name="RestaurantMenuSearchIcon">
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+    </style>
+    <style name="ReviewCompleteHeaderText" parent="@style/GHSFontDefaultLarge">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_marginTop">20.0dip</item>
+        <item name="android:layout_marginBottom">24.0dip</item>
+    </style>
+    <style name="ReviewCompleteImage">
+        <item name="android:layout_marginBottom">30.0dip</item>
+    </style>
+    <style name="ReviewCompleteRateMore" parent="@style/GHSFontSectionHeader">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="ReviewContainer">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+    </style>
+    <style name="ReviewOrderInformation" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="ReviewOrderInformationContainer" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="ReviewOrderInformationEditButton" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_height">42.0dip</item>
+    </style>
+    <style name="ReviewOrderOrderInstructions" parent="@style/GHSFontDefault">
+        <item name="android:minHeight">36.0dip</item>
+    </style>
+    <style name="ReviewOrderOrderInstructionsCharacterCount" parent="@style/GHSFontDefault">
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+    </style>
+    <style name="ReviewOrderOrderInstructionsContainer">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="ReviewOrderOrderInstructionsSubHeader" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="ReviewOrderPaymentContainer" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+    </style>
+    <style name="ReviewOrderPaymentSelector">
+        <item name="android:layout_marginLeft">@dimen/payment_spinner_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/payment_spinner_marginLeft</item>
+        <item name="android:dropDownVerticalOffset">@dimen/payment_spinner_vertical_dropdown_offset</item>
+    </style>
+    <style name="ReviewOrderProgressBar">
+        <item name="android:layout_width">36.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoCode" parent="@style/GHSFontDefault">
+        <item name="android:paddingRight">32.0dip</item>
+        <item name="android:minHeight">36.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoCodeButton" parent="@style/GHSFontDefault">
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoCodeContainer">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoCodeMessage" parent="@style/GHSFontSecondary">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoCodeProgressBar">
+        <item name="android:layout_width">24.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoCodeValidText" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoCodeViewFlipper">
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="ReviewOrderPromoLabel" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="ReviewOrderTipButton" parent="@style/GHSFontDefault">
+        <item name="android:padding">3.0dip</item>
+    </style>
+    <style name="ReviewOrderTipButtonContainer">
+        <item name="android:paddingLeft">@dimen/checkout_side_padding</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/checkout_side_padding</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_height">64.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="ReviewOrderTipButtonCustom" parent="@style/GHSFontDefault">
+        <item name="android:padding">3.0dip</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+    </style>
+    <style name="ReviewOrderTipButtonSeparator">
+        <item name="android:background">@drawable/bg_rounded_button_toggle_separator</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="ReviewRatingCaption" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginBottom">36.0dip</item>
+    </style>
+    <style name="ReviewRatingDisplayText" parent="@style/GHSFontDefaultExtraLarge">
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="ReviewRatingPrompt" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="ReviewRatingView">
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="ReviewSurveyAnswerButton" parent="@style/GHSFontSubHeader">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="ReviewSurveyAnswerButtonSubContainer">
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="ReviewSurveyAnswerContainer">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+    </style>
+    <style name="ReviewSurveySkipButton" parent="@style/GHSFontSubHeader">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32.0dip</item>
+    </style>
+    <style name="ReviewSurveySubmitButton" parent="@style/GHSFontSubHeader">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_marginLeft">32.0dip</item>
+        <item name="android:layout_marginRight">32.0dip</item>
+    </style>
+    <style name="ReviewSurveyViewPager">
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+    </style>
+    <style name="ReviewWriteupButtonContainer">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingBottom">20.0dip</item>
+    </style>
+    <style name="ReviewWriteupEditText" parent="@style/GHSFontDefault">
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="ReviewWriteupHeader" parent="@style/GHSFontDefault">
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="ReviewWriteupLabel" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginRight">12.0dip</item>
+    </style>
+    <style name="ReviewWriteupWordCharacterCount" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ReviewsCreateReviewButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:padding">@dimen/reviews_header_padding</item>
+        <item name="android:layout_margin">@dimen/reviews_header_margin</item>
+    </style>
+    <style name="ReviewsHeaderContainer">
+        <item name="android:padding">@dimen/reviews_header_padding</item>
+    </style>
+    <style name="ReviewsHeaderText" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="ReviewsList">
+        <item name="android:divider">@drawable/separator_line_dotted</item>
+        <item name="android:dividerHeight">2.0dip</item>
+        <item name="android:layerType">software</item>
+    </style>
+    <style name="SaveCustomLabelButton" parent="@style/GHSFontTertiary">
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_margin">6.0dip</item>
+    </style>
+    <style name="SavedAddressContainer">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="SavedAddressInfo" parent="@style/GHSFontDefault" />
+    <style name="SavedAddressLabel" parent="@style/GHSFontSubHeader" />
+    <style name="SavedAddressListView">
+        <item name="android:dividerHeight">1.0dip</item>
+    </style>
+    <style name="SavedAddressPickupOptionContainer" parent="@style/SavedAddressContainer">
+        <item name="android:minHeight">60.0dip</item>
+    </style>
+    <style name="SavedPaymentType" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_marginTop">@dimen/payment_list_vertical_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/payment_list_vertical_spacing</item>
+    </style>
+    <style name="SearchActiveFilters">
+        <item name="android:paddingLeft">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingBottom">4.0dip</item>
+    </style>
+    <style name="SearchBar">
+        <item name="android:paddingLeft">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">@dimen/menu_item_side_padding</item>
+        <item name="android:paddingBottom">4.0dip</item>
+    </style>
+    <style name="SearchBarAutoCompleteClearAllItem" parent="@style/GHSFontDefaultLarge">
+        <item name="android:paddingLeft">30.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">30.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:minHeight">50.0dip</item>
+    </style>
+    <style name="SearchBarAutoCompleteItemContainer">
+        <item name="android:paddingLeft">30.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">30.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:minHeight">50.0dip</item>
+    </style>
+    <style name="SearchClearActiveFilters">
+        <item name="android:layout_width">16.0dip</item>
+        <item name="android:layout_height">16.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="SearchClearButton">
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+    </style>
+    <style name="SearchEditText" parent="@style/GHSFontDefault">
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="SearchErrorAlertIcon">
+        <item name="android:layout_width">75.0dip</item>
+        <item name="android:layout_height">75.0dip</item>
+        <item name="android:layout_marginBottom">18.0dip</item>
+    </style>
+    <style name="SearchErrorMessage" parent="@style/GHSFontDefaultLarge">
+        <item name="android:paddingLeft">@dimen/restaurant_header_padding</item>
+        <item name="android:paddingRight">@dimen/restaurant_header_padding</item>
+    </style>
+    <style name="SearchProgressBar">
+        <item name="android:layout_width">48.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="SearchRefineButton">
+        <item name="android:layout_width">22.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <style name="SearchRefineClickArea">
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="SearchResultsList">
+        <item name="android:divider">@drawable/separator_line_dotted</item>
+        <item name="android:dividerHeight">2.0dip</item>
+        <item name="android:layerType">software</item>
+    </style>
+    <style name="SplashLoadingText" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="TipSelectorAmount" parent="@style/GHSFontDefault">
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="TipSelectorLabel" parent="@style/GHSFontSubHeader" />
+    <style name="TipSelectorOption" parent="@style/GHSFontSubHeader">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="TipSelectorOptionContainer">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="TipSelectorTitle" parent="@style/GHSFontDefault">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="WelcomeBackground">
+        <item name="android:src">@drawable/ghs_bg_search_welcome</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="WelcomeLetsGoButton" parent="@style/GHSWelcomeScreenButton">
+        <item name="android:layout_height">@dimen/welcome_screen_go_button_height</item>
+        <item name="android:layout_marginTop">@dimen/welcome_screen_go_button_marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_screen_go_button_marginBottom</item>
+    </style>
+    <style name="YourInfoClearButton">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="YourInfoEditText" parent="@style/GHSFontDefault">
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="YourInfoLabel" parent="@style/GHSFontSubHeader">
+        <item name="android:layout_marginLeft">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+    </style>
+    <style name="YourInfoPaymentSelector">
+        <item name="android:layout_marginLeft">@dimen/pickup_info_payment_spinner_side_padding</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_payment_spinner_side_padding</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="YourInfoRequiredLabel" parent="@style/GHSFontSecondary">
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+    </style>
+    <style name="YourInfoSaveButton" parent="@style/GHSFontSectionHeader">
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/pickup_info_side_padding</item>
+        <item name="android:layout_marginTop">20.0dip</item>
+        <item name="android:layout_marginRight">@dimen/pickup_info_side_padding</item>
+    </style>
+    <style name="YourInfoSaveCreditCard">
+        <item name="android:layout_marginLeft">@dimen/pickup_info_save_credit_card_left_margin</item>
+    </style>
+    <style name="YourInfoScrollContainer">
+        <item name="android:paddingBottom">16.0dip</item>
+    </style>
+</resources>

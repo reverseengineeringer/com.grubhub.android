@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="fill_horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ghs="http://schemas.android.com/apk/res-auto">
+    <com.grubhub.AppBaseLibrary.android.views.GHSAddressBar android:id="@id/search_address_bar" ghs:addressBarBackground="@drawable/bg_address_text" ghs:showAllVisible="false" style="@style/AddressBar" />
+</RelativeLayout>

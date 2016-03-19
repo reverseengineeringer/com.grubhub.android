@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/favorites_container" style="@style/FavoritesListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_restaurant_cell_name_color" android:id="@id/restaurant_name" android:contentDescription="@string/desc_favorites_restaurant_name" style="@style/FavoritesRestaurantName" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_inactive_color" android:id="@id/restaurant_address" android:contentDescription="@string/desc_favorites_restaurant_address" style="@style/FavoritesRestaurantInfo" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/restaurant_distance" android:text="0.7 miles away" android:contentDescription="@string/desc_favorites_restaurant_distance" style="@style/FavoritesRestaurantInfo" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textStyle="italic" android:textColor="@color/ghs_attention_color" android:id="@id/restaurant_closed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorites_restaurant_closed" android:contentDescription="@string/desc_favorites_restaurant_distance" />
+    </LinearLayout>
+</RelativeLayout>

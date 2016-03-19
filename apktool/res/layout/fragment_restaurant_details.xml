@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/restaurant_details_view_flipper" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:background="@color/ghs_menu_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/restaurant_info_hours_of_operation" style="@style/RestaurantDetailsHeader" />
+            <LinearLayout android:orientation="vertical" android:id="@id/restaurant_details_hours_of_operation_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RestaurantDetailsHoursOfOperationsContainer" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center_vertical" android:id="@id/restaurant_details_contact_info_header" android:background="@color/ghs_menu_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/restaurant_info_contact_info" style="@style/RestaurantDetailsHeader" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restaurant_info_address" style="@style/RestaurantDetailsSubHeader" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/restaurant_details_address_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/RestaurantDetailsText" />
+            <View style="@style/RestaurantDetailsDivider" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restaurant_info_phone" style="@style/RestaurantDetailsSubHeader" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/restaurant_details_phone_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/RestaurantDetailsText" />
+            <View style="@style/RestaurantDetailsDivider" />
+        </LinearLayout>
+    </ScrollView>
+</com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/ghs_primary_color" android:layout_width="fill_parent" style="@style/FeedbackDialogHeader">
+        <ImageView android:id="@id/feedback_close" android:background="@drawable/close_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_feedback_close" style="@style/FeedbackDialogCloseButton" />
+    </RelativeLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:text="@string/feedback_selection_title" style="@style/FeedbackSelectionTitle" />
+    <View android:background="@color/ghs_separator_line_default_color" android:layout_width="fill_parent" style="@style/FeedbackDialogDivider" />
+    <ListView android:id="@id/feedback_selection_list" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/ghs_separator_line_default_color" style="@style/FeedbackSelectionList" />
+</LinearLayout>

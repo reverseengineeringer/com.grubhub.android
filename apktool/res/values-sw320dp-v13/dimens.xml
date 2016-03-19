@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="address_validation_dialog_width">300.0dip</dimen>
+    <dimen name="coach_bubble_arrow_height">10.0dip</dimen>
+    <dimen name="coach_bubble_arrow_width">20.0dip</dimen>
+    <dimen name="coach_bubble_height">50.0dip</dimen>
+    <dimen name="coach_bubble_width">320.0dip</dimen>
+    <dimen name="custom_tip_dialog_width">300.0dip</dimen>
+</resources>

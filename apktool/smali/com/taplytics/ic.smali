@@ -1,0 +1,60 @@
+.class Lcom/taplytics/ic;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/android/volley/Response$ErrorListener;
+
+
+# instance fields
+.field final synthetic a:Ljava/lang/String;
+
+.field final synthetic b:Lcom/taplytics/ik;
+
+.field final synthetic c:Lcom/taplytics/ia;
+
+
+# direct methods
+.method constructor <init>(Lcom/taplytics/ia;Ljava/lang/String;Lcom/taplytics/ik;)V
+    .locals 0
+
+    .prologue
+    .line 363
+    iput-object p1, p0, Lcom/taplytics/ic;->c:Lcom/taplytics/ia;
+
+    iput-object p2, p0, Lcom/taplytics/ic;->a:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/taplytics/ic;->b:Lcom/taplytics/ik;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onErrorResponse(Lcom/android/volley/VolleyError;)V
+    .locals 2
+
+    .prologue
+    .line 366
+    iget-object v0, p0, Lcom/taplytics/ic;->a:Ljava/lang/String;
+
+    const-string v1, "Posting App Icon"
+
+    invoke-static {v0, v1, p1}, Lcom/taplytics/ck;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
+
+    .line 367
+    iget-object v0, p0, Lcom/taplytics/ic;->b:Lcom/taplytics/ik;
+
+    if-eqz v0, :cond_0
+
+    .line 368
+    iget-object v0, p0, Lcom/taplytics/ic;->b:Lcom/taplytics/ik;
+
+    invoke-interface {v0, p1}, Lcom/taplytics/ik;->a(Ljava/lang/Exception;)V
+
+    .line 369
+    :cond_0
+    return-void
+.end method

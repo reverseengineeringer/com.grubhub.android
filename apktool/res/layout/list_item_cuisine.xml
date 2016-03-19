@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_cuisine_name_count" style="@style/GHSFontMenuItemTitle" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/textViewCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textView1" style="@style/GHSFontMenuItemTitle" />
+    <ImageView android:id="@id/cuisine_selected_indicator" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ghs_ic_check" android:layout_alignParentRight="true" android:contentDescription="@string/desc_cuisine_check_mark" />
+</RelativeLayout>

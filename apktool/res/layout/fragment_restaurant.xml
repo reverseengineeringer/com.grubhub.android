@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ghs="http://schemas.android.com/apk/res-auto">
+    <com.grubhub.AppBaseLibrary.android.views.GHSRestaurantMenuSearchBar android:id="@id/menu_search_bar" android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/restaurant_list_header_height" ghs:menuSearchBarBackground="@drawable/bg_edit_text_search" style="@style/RestaurantMenuSearchBar" />
+    <View android:id="@id/menu_search_bar_divider" android:background="@drawable/divider_gray" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_below="@id/menu_search_bar" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/menu_loading_view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/menu_search_bar_divider">
+        <RelativeLayout android:id="@id/menu_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ExpandableListView android:id="@id/menu" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+            <include android:layout_gravity="bottom" android:id="@id/phone_only_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/phone_only" />
+            <include android:id="@id/sticky_header" layout="@layout/list_item_menu_category" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSSynchronizedHeaderView android:id="@id/synchronized_header_view" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            <FrameLayout android:id="@id/menu_search_results_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/synchronized_header_view" />
+        </RelativeLayout>
+    </com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>
+    <FrameLayout android:id="@id/menu_child_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

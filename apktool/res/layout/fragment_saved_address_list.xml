@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ghs_background_no_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/addresses_empty_addresses" android:background="@color/ghs_background_color" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_saved_address" android:contentDescription="@string/desc_saved_addresses_empty" style="@style/GHSFontDefaultLarge" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/ghs_separator_line_default_color" style="@style/SavedAddressListView" />
+</LinearLayout>

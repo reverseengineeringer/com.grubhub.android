@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CartSubtotal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSFlipView android:id="@id/cart_alternative" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_cart_alternative_button" style="@style/CartAlternative">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/ghs_ic_cart_pickup" android:scaleType="fitStart" style="@style/CartOrderTypeIcon" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_switch_to_pickup" style="@style/GHSFontSectionHeader" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/ghs_ic_cart_delivery" android:scaleType="fitStart" style="@style/CartOrderTypeIcon" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_switch_to_delivery" style="@style/GHSFontSectionHeader" />
+        </LinearLayout>
+    </com.grubhub.AppBaseLibrary.android.views.GHSFlipView>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/cart_subtotal_child_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cart_order_subtotal" android:layout_weight="1.0" style="@style/GHSFontDefaultLarge" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/subtotal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontMenuItemTitle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/delivery_fee_container" android:paddingLeft="@dimen/cart_subtotal_child_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cart_delivery_fee" android:layout_weight="1.0" style="@style/GHSFontDefaultLarge" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/delivery_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontMenuItemTitle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/cart_subtotal_child_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cart_tax" android:layout_weight="1.0" style="@style/GHSFontDefaultLarge" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/tax" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontMenuItemTitle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/empty_bag_container" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CartEmptyBagContainer">
+        <ImageView android:id="@id/empty_bag" android:src="@drawable/ghs_ic_empty_bag" android:scaleType="fitStart" android:contentDescription="@string/desc_cart_empty_cart_button" style="@style/CartEmptyBagIcon" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_actionable_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_empty_bag" style="@style/GHSFontSectionHeader" />
+    </LinearLayout>
+</LinearLayout>

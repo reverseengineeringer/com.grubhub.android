@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_more_filters_sortby_item_selector" android:paddingTop="@dimen/search_filter_item_vertical_padding" android:paddingBottom="@dimen/search_filter_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/filter_item_text_selector" android:id="@id/search_filter_sortby_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_filter_horizontal_text_margin" android:layout_centerVertical="true" style="@style/GHSFontDefault" />
+    <ImageView android:id="@id/search_filter_sortby_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/search_filter_horizontal_image_margin" android:src="@drawable/filter_toggle_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

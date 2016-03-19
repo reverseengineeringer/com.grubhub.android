@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GHSTimePickerDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:textColorPrimary">@color/ghs_primary_text_color</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/ghs_primary_text_color</item>
+        <item name="android:colorControlNormal">@color/ghs_actionable_color</item>
+        <item name="android:colorControlHighlight">@color/ghs_highlight_color</item>
+    </style>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutScrollContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/receipt_thank_you_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/thank_you" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/desc_receipt_thank_you_header_image" style="@style/ReceiptThankYouImage" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_header_restaurant_copy" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutSectionSubHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_header_sub_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receipt_header_description_delivery" style="@style/CheckoutSectionSubText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/receipt_yummy_rummy_header" style="@style/YummyRummyThankYouContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/receipt_yummy_rummy_thank_you" android:text="@string/yummy_rummy_receipt_thank_you" style="@style/YummyRummyThankYouHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:gravity="center" android:id="@id/receipt_yummy_rummy_restaurant_copy" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutSectionSubHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/receipt_yummy_rummy_sub_text" android:text="@string/yummy_rummy_receipt_delivery_subtext" style="@style/YummyRummyThankYouSubtext" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/receipt_pickup_map_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/receipt_pickup_map" android:layout_width="fill_parent" android:contentDescription="@string/desc_receipt_pickup_map" style="@style/ReceiptPickupMap" />
+        <View android:id="@id/receipt_pickup_map_touch_interceptor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receipt_header_your_order_information" style="@style/ReceiptSectionHeader" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutItemContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_order_number_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receipt_header_label_order_number" android:layout_alignParentLeft="true" style="@style/CheckoutSubHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_order_number_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/receipt_order_number_header" style="@style/CheckoutSubValue" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/receipt_payment_type_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/receipt_order_number_value" android:layout_alignParentLeft="true" style="@style/ReceiptPaymentType">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_gravity="center_vertical" android:id="@id/receipt_payment_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/receipt_payment_type_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+        </LinearLayout>
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_payment_hold_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receipt_payment_hold" android:layout_below="@id/receipt_payment_type_layout" android:layout_alignLeft="@id/receipt_payment_type_layout" style="@style/GHSFontPreviewItalic" />
+    </RelativeLayout>
+    <View android:id="@id/receipt_estimated_section_divider" style="@style/CheckoutDivider" />
+    <RelativeLayout android:id="@id/receipt_estimated_section" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutItemContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_estimated_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/CheckoutSubHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_estimated_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/receipt_estimated_header" style="@style/CheckoutSubValue" />
+    </RelativeLayout>
+    <View android:id="@id/receipt_future_order_submission_section_divider" style="@style/CheckoutDivider" />
+    <RelativeLayout android:id="@id/receipt_future_order_submission_section" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutItemContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_future_order_submission_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_label_order_submission" android:layout_alignParentLeft="true" style="@style/CheckoutSubHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_future_order_submission_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/receipt_future_order_submission_header" android:layout_alignLeft="@id/receipt_future_order_submission_header" />
+    </RelativeLayout>
+    <View style="@style/CheckoutDivider" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_address_header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CheckoutSectionSubHeader" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_address_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CheckoutSectionSubText" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_future_order_address_disclaimer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_future_address_disclaimer" style="@style/CheckoutFutureOrderDisclaimer" />
+    <View style="@style/CheckoutDivider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/receipt_order_instructions_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReceiptOrderInstructionsContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_label_order_instructions" style="@style/ReceiptOrderInstructionsSubHeader" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_order_instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReceiptOrderInstructions" />
+    </LinearLayout>
+    <View android:id="@id/receipt_order_instructions_divider" style="@style/CheckoutDivider" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_restaurant_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutSectionSubHeader" />
+    <LinearLayout android:orientation="vertical" android:id="@id/receipt_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View style="@style/CheckoutDivider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/receipt_totals_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutItemContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/receipt_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/CheckoutTotalAmount" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_label_total" android:layout_toLeftOf="@id/receipt_total" android:layout_alignParentLeft="true" style="@style/CheckoutTotalName" />
+    </RelativeLayout>
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receipt_header_order_issues" style="@style/ReceiptSectionHeader" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector" android:gravity="center" android:id="@id/receipt_call_restaurant_button" android:background="@drawable/bg_rounded_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receipt_button_call_the_restaurant" android:contentDescription="@string/desc_receipt_call_restaurant_button" style="@style/CheckoutButton" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector" android:gravity="center" android:id="@id/receipt_call_care_team_button" android:background="@drawable/bg_rounded_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receipt_button_call_our_care_team" android:contentDescription="@string/desc_receipt_call_care_team_button" style="@style/CheckoutButton" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector" android:gravity="center" android:id="@id/receipt_cancel_future_order" android:background="@drawable/bg_rounded_button_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receipt_button_cancel_order" android:contentDescription="@string/desc_receipt_cancel_future_order_button" style="@style/CheckoutButton" />
+</LinearLayout>

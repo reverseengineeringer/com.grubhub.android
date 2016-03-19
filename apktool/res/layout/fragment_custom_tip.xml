@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/CustomTipContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/custom_tip_title" style="@style/CustomTipTitle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomTipEditTextContainer">
+        <com.grubhub.AppBaseLibrary.android.views.GHSEditText android:id="@id/custom_tip_edit_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="numberDecimal" android:imeOptions="actionDone" android:contentDescription="@string/desc_custom_tip_field" style="@style/CustomTipEditText" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector" android:id="@id/custom_tip_button_cancel" android:background="@drawable/bg_rounded_button_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" android:contentDescription="@string/desc_custom_tip_cancel_button" style="@style/CustomTipButton" />
+        <View android:layout_height="fill_parent" style="@style/CustomTipButtonSpacer" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector" android:id="@id/custom_tip_button_ok" android:background="@drawable/bg_rounded_button_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" android:imeOptions="actionDone" android:contentDescription="@string/desc_custom_tip_ok_button" style="@style/CustomTipButton" />
+    </LinearLayout>
+</LinearLayout>

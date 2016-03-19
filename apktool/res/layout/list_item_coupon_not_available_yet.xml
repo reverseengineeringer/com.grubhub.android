@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CouponItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:layout_gravity="center_vertical" android:id="@id/coupon_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CouponItemDescription" />
+</FrameLayout>

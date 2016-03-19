@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper android:id="@id/menu_item_view_flipper" android:background="@color/ghs_background_no_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/add_button_container" android:background="@color/ghs_background_color" android:layout_width="fill_parent" android:layout_alignParentBottom="true" style="@style/MenuItemButtonContainer">
+            <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector_inverted" android:gravity="center" android:layout_gravity="center" android:id="@id/add_button" android:background="@drawable/bg_rounded_button_selector_inverted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_item_make_required_choices" android:contentDescription="@string/desc_menu_item_add_to_cart_button" style="@style/MenuItemButton" />
+        </FrameLayout>
+        <ExpandableListView android:id="@id/menu_item_expandable_choice_list" android:background="@color/ghs_background_no_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:layout_above="@id/add_button_container" />
+        <FrameLayout android:id="@id/menu_item_overlay" android:background="@color/ghs_overlay_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_menu_search_overlay">
+            <RelativeLayout android:layout_gravity="center" android:background="@drawable/bg_menu_item_popup" android:layout_width="@dimen/menu_item_overlay_width" android:layout_height="@dimen/menu_item_overlay_height">
+                <ImageView android:id="@id/add_item_overlay_image" android:layout_width="@dimen/menu_item_overlay_image_width" android:layout_height="@dimen/menu_item_overlay_image_height" android:layout_marginTop="@dimen/menu_item_overlay_image_margin_top" android:layout_marginBottom="@dimen/menu_item_overlay_image_margin_bottom" android:src="@drawable/add_to_bag_popup" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/ghs_light_text_color" android:id="@id/add_item_overlay_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_item_add_to_bag" android:layout_below="@id/add_item_overlay_image" android:layout_centerHorizontal="true" style="@style/GHSFontMenuOverlay" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</com.grubhub.AppBaseLibrary.android.views.GHSLoadingViewFlipper>

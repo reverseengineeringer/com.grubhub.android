@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/past_order_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PastOrdersListItem">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_restaurant_cell_name_color" android:id="@id/restaurant_name" android:contentDescription="@string/desc_past_order_restaurant_name" style="@style/PastOrdersRestaurantName" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/past_order_line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/restaurant_name">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/past_order_order_type" android:contentDescription="@string/desc_past_order_order_type" style="@style/PastOrdersOrderType" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/past_order_date_time" android:visibility="visible" android:text="" android:contentDescription="@string/desc_past_order_date_time" style="@style/PastOrdersDateTime" />
+        </LinearLayout>
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/past_order_food_items" android:visibility="visible" android:text="" android:layout_below="@id/past_order_line2" android:contentDescription="@string/desc_past_order_food_items" style="@style/PastOrdersFoodItems" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/past_order_rating_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/past_order_food_items" style="@style/PastOrderRatingContainer">
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ratings_reviews_your_rating" style="@style/PastOrderYourRatingLabel" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSRatingStarView android:id="@id/past_order_rating_star_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_ratings_reviews_star_rating" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/past_order_rating_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontDefault" />
+        </LinearLayout>
+        <com.grubhub.AppBaseLibrary.android.views.GHSButton android:textColor="@color/text_rounded_button_selector" android:id="@id/past_order_rate_and_review_button" android:background="@drawable/bg_rounded_button_selector" android:visibility="gone" android:text="@string/ratings_reviews_rate_and_review" android:layout_below="@id/past_order_food_items" style="@style/PastOrderRateReviewButton" />
+    </RelativeLayout>
+</FrameLayout>

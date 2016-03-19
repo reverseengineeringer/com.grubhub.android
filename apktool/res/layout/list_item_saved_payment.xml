@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/CartItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/edit_button_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/delete_item" android:background="@color/ghs_accent_color" android:layout_height="fill_parent" android:contentDescription="@string/desc_delete_button_credit_card" style="@style/CartItemButton">
+            <ImageView android:layout_gravity="center_horizontal" android:src="@drawable/ghs_ic_delete_item" style="@style/CartItemDeleteIcon" />
+            <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_light_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_delete_item" style="@style/GHSFontDefault" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/slide_container" android:background="@color/ghs_light_text_color" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_container_credit_card" style="@style/CartItemSlider"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:id="@id/saved_card_type" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="@string/desc_credit_card_type" style="@style/SavedPaymentType" />
+        <RadioButton android:id="@id/saved_payment_radio_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/saved_card_type" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_radio_button_credit_card" />
+        <ImageView android:id="@id/saved_payment_image" android:paddingRight="@dimen/payment_image_padding_right" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/saved_card_type" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_image_credit_card" />
+        <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_secondary_text_color" android:id="@id/saved_payment_info" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/saved_payment_image" android:layout_below="@id/saved_card_type" android:contentDescription="@string/desc_text__info_credit_card" style="@style/SavedAddressInfo" />
+    </RelativeLayout>
+</FrameLayout>

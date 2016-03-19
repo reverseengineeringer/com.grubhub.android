@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/OrderStatusEvent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/order_status_event_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GHSFontSectionHeader" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/order_status_event_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/order_status_event_time" style="@style/OrderStatusEventTitle" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:textColor="@color/ghs_primary_text_color" android:id="@id/order_status_event_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/order_status_event_title" android:layout_alignLeft="@id/order_status_event_title" style="@style/OrderStatusEventMessage" />
+</RelativeLayout>

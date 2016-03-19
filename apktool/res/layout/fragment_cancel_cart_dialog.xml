@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/future_order_cancel_cart_horizontal_padding" android:paddingRight="@dimen/future_order_cancel_cart_horizontal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.grubhub.AppBaseLibrary.android.views.GHSTextView android:gravity="center" android:id="@id/cancel_cart_header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CartDialogHeader" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/cancel_cart_no_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no" style="@style/CartDialogButtonPrimary" />
+    <com.grubhub.AppBaseLibrary.android.views.GHSButton android:id="@id/cancel_cart_yes_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/yes" style="@style/CartDialogButtonSecondary" />
+</LinearLayout>
